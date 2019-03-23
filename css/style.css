@@ -1,3 +1,68 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Oswald|Playfair+Display:400,400i");
+/*text styles*/
+button {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+/*styles*/
 body {
-  background: #24ABE2;
+  background: #ffffff;
   color: #333333; }
+
+/* --------- header --------- */
+.navbar-top {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  width: 100%; }
+
+.nav-links {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-size: 11px;
+  height: 14px; }
+  .nav-links:hover {
+    background: #24ABE2;
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
+
+.logo {
+  width: 255px;
+  margin-top: -25px;
+  transition: all 0.3s ease; }
+  .logo a {
+    text-decoration: none;
+    color: #333333; }
+  .logo:hover {
+    opacity: .9;
+    transform: scale(1.03);
+    transition: all 0.3s ease; }
+    .logo:hover .logo-background {
+      background: #82CFEE;
+      transition: all 0.3s ease; }
+
+.logo-sm {
+  font-family: "Playfair Display", serif;
+  font-style: italic; }
+
+.logo-lg {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.logo-background {
+  width: 77%;
+  height: 20px;
+  background: #24ABE2;
+  margin-top: -27px;
+  margin-left: 9%; }

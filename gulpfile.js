@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 //compile scss to css
-function style() {
+function build() {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
@@ -19,10 +19,10 @@ function watch() {
       baseDir: './'
     }
   });
-  gulp.watch('./scss/**/*.scss', style);
+  gulp.watch('./scss/**/*.scss', build);
   gulp.watch('./**/*.html').on('change', browserSync.reload);
   gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 };
 
-exports.style = style;
+exports.build = build;
 exports.watch = watch;

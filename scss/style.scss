@@ -1,10 +1,110 @@
+/* variables */
+$ease: all .3s ease;
+
+//colors ---------------
 $white: #ffffff;
 $sky: #82CFEE;
 $main: #24ABE2;
 $navy: #31548C;
 $dark: #333333;
 
+//fonts ----------------
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Oswald|Playfair+Display:400,400i');
+
+$body: 'Open Sans', sans-serif;
+$bold: 'Oswald', sans-serif;
+$serif: 'Playfair Display', serif;
+
+/*text styles*/
+
+
+button {
+  font-family: $bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/*styles*/
+
 body {
-  background: $main;
+  background: $white;
   color: $dark;
 }
+
+/* --------- header --------- */
+
+.navbar-top {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  width: 100%;
+}
+.nav-links {
+  margin-top: 5px;
+  text-decoration: none;
+  color: $dark;
+  font-family: $body;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-size: 11px;
+  height: 14px;
+  &:hover {
+    background: $main;
+    transition: $ease;
+    transform: scale(1.03);
+  }
+}
+
+.logo {
+  width: 255px;
+  margin-top: -25px;
+  transition: $ease;
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+  &:hover {
+    opacity: .9;
+    transform: scale(1.03);
+    transition: $ease;
+    .logo-background {
+      background: $sky;
+      transition: $ease;
+    }
+  }
+}
+.logo-sm {
+  font-family: $serif;
+  font-style: italic ;
+}
+.logo-lg {
+  font-family: $body;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.logo-background {
+  width: 77%;
+  height: 20px;
+  background: $main;
+  margin-top: -27px;
+  margin-left: 9%;
+}
+// .logo-desc {
+//   font-family: $serif;
+//   font-size: 12px;
+//   font-style: italic;
+//   letter-spacing: 0.03em;
+//   margin-left: 27px;
+// }
+// .logo-line {
+//   margin-left: 35%;
+//   margin-top: 7px;
+//   height: 2px;
+//   width: 15%;
+//   background: $main;
+// }
