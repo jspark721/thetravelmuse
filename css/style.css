@@ -34,6 +34,24 @@ body {
     text-transform: uppercase;
     font-size: .7em; }
 
+.header--social {
+  position: absolute;
+  right: 25px;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .header--social i {
+    padding: 15px 10px;
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: left;
+    transition: all 0.3s ease; }
+    .header--social i:hover {
+      transform: scale(1.3);
+      transition: all 0.3s ease;
+      color: #82CFEE; }
+
 .hero--container {
   height: 100vh;
   width: 100vw;
@@ -42,7 +60,9 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   background-image: url("/img/main.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .hero--box {
