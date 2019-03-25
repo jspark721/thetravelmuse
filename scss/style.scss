@@ -1,0 +1,108 @@
+/* variables */
+$ease: all .3s ease;
+
+//colors ---------------
+$white: #ffffff;
+$sky: #82CFEE;
+$main: #24ABE2;
+$navy: #31548C;
+$dark: #333333;
+
+//fonts ----------------
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Oswald:200,400|Playfair+Display:400,400i');
+
+$body: 'Open Sans', sans-serif;
+$bold: 'Oswald', sans-serif;
+$serif: 'Playfair Display', serif;
+
+
+/*styles*/
+
+body {
+  margin: 0;
+}
+
+//font styles ---------------
+
+.uppercase-xsm {
+  font-size: 0.7em;
+  font-weight: 200;
+  font-family: $bold;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+}
+
+//front-page header section -------------
+.sticky {
+  position: fixed;
+}
+.navbar--container {
+  top: 15%;
+  background: $white;
+  height: 170px;
+  width: 70px;
+}
+.navbar--icon {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.navbar--title {
+  margin-left: 25px;
+  margin-top: 45px;
+  h4 {
+    writing-mode: vertical-rl;
+    font-family: $bold;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-size: .7em;
+  }
+}
+
+.hero--container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('/img/main.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero--box {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.hero-title {
+  color: $white;
+  font-family: $body;
+  font-size: 4em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero--scroll {
+  text-align: center;
+  color: $white;
+  margin-bottom: 15px;
+  .fa-angle-double-down {
+    font-size: 0.9em;
+    animation: bounce 1.5s ease-in-out 3;
+    animation-delay: 10s;
+  }
+}
+
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+/*animations */
+@keyframes bounce {
+  50% {
+     transform: translateY(-5px);
+  }
+}
