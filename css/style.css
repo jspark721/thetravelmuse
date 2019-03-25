@@ -1,8 +1,11 @@
 /* variables */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Oswald:200,400|Playfair+Display:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,900|Lato:100,400,900|Oswald:200,400|Playfair+Display:400,400i");
 /*styles*/
 body {
   margin: 0; }
+
+a {
+  cursor: pointer; }
 
 .uppercase-xsm {
   font-size: 0.7em;
@@ -11,17 +14,25 @@ body {
   text-transform: uppercase;
   letter-spacing: .4em; }
 
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-size: 1.2em; }
+
 .sticky {
   position: fixed; }
 
 .navbar--container {
   top: 15%;
-  background: #ffffff;
-  height: 170px;
+  background: #82CFEE;
+  height: 175px;
   width: 70px; }
 
 .navbar--icon {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 40px; }
 
 .navbar--title {
@@ -34,6 +45,12 @@ body {
     text-transform: uppercase;
     font-size: .7em; }
 
+.header--description {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  right: 30px; }
+
 .header--social {
   position: absolute;
   right: 25px;
@@ -43,12 +60,12 @@ body {
   align-items: flex-end; }
   .header--social i {
     padding: 15px 10px;
-    color: #ffffff;
+    color: #F4D85D;
     font-size: 1.1em;
     text-align: left;
     transition: all 0.3s ease; }
     .header--social i:hover {
-      transform: scale(1.3);
+      transform: scale(1.4);
       transition: all 0.3s ease;
       color: #82CFEE; }
 
@@ -59,22 +76,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("/img/main.jpg");
+  background-image: url("../img/main.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .hero--box {
-  text-align: center;
-  margin-bottom: 90px; }
+  margin-left: 25px;
+  margin-bottom: 130px; }
 
-.hero-title {
+.hero--title {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4em;
-  letter-spacing: 5px;
-  text-transform: uppercase; }
+  letter-spacing: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0; }
+
+.hero--desc {
+  height: 35px;
+  width: 300px; }
+  .hero--desc p {
+    margin: 0;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #333333;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    padding-top: 5px; }
+  .hero--desc span {
+    background: #F4D85D; }
+  .hero--desc strong {
+    background: #82CFEE; }
 
 .hero--scroll {
   text-align: center;
@@ -84,6 +122,8 @@ body {
     font-size: 0.9em;
     animation: bounce 1.5s ease-in-out 3;
     animation-delay: 10s; }
+  .hero--scroll a {
+    color: #ffffff; }
 
 section {
   height: 100vh;
