@@ -30,6 +30,7 @@ button {
 body {
   background: $white;
   color: $dark;
+  margin: 0;
 }
 
 /* --------- header --------- */
@@ -50,10 +51,12 @@ body {
   text-transform: uppercase;
   font-size: 11px;
   height: 14px;
+  transition: $ease;
   &:hover {
-    background: $main;
+    background: $sky;
     transition: $ease;
-    transform: scale(1.03);
+    transform: scale(1.1);
+    opacity: .8;
   }
 }
 
@@ -107,4 +110,29 @@ body {
 //   height: 2px;
 //   width: 15%;
 //   background: $main;
+// }
+
+section {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+// }
+// .hero-img {
+//   margin-top: 3em;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('/img/header.jpg');
+//   background-position: top;
+//   background-size: cover;
+//   -webkit-filter: grayscale(100%);
+//   filter: grayscale(100%);
+//   transition: $ease;
+//   &:hover {
+//     -webkit-filter: grayscale(0%);
+//     filter: grayscale(0%);
+//   }
+// }
+// .hero-desc {
+//
 // }
