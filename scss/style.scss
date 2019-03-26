@@ -91,7 +91,7 @@ a, button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('/img/main.jpg');
+  background-image: url('../img/main.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ section {
   z-index: -1;
   width: 55%;
   height: 100%;
-  background-image: url('/img/about.jpg');
+  background-image: url('../img/about.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
