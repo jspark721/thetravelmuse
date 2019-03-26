@@ -4,7 +4,7 @@
 body {
   margin: 0; }
 
-a {
+a, button {
   cursor: pointer; }
 
 .uppercase-xsm {
@@ -98,6 +98,108 @@ a {
 section {
   height: 100vh;
   width: 100vw; }
+
+.about--container {
+  position: relative;
+  height: 100%; }
+
+.about--left {
+  position: absolute;
+  z-index: -1;
+  width: 55%;
+  height: 100%;
+  background-image: url("/img/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.number--box {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 150px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ffffff; }
+
+.num {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin-top: 20px; }
+
+.number--text {
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 200;
+  writing-mode: vertical-rl;
+  margin-left: 95px;
+  margin-top: -72px; }
+
+.about--right {
+  position: absolute;
+  right: 0;
+  width: 54.5%;
+  height: 100%; }
+
+.about--top-corner {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 6%;
+  padding: 5px; }
+  .about--top-corner h3 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.2em;
+    font-style: italic;
+    font-size: 14px;
+    background: #333333;
+    color: #ffffff; }
+
+.about--title {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  color: #333333; }
+  .about--title h2 {
+    padding: 4px 10px 3px 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 2.7em;
+    margin-left: 10px;
+    background: #ffffff; }
+
+.about--desc {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 8%;
+  text-align: justify; }
+
+.about--bio {
+  letter-spacing: 0.03em;
+  font-size: 0.9em;
+  line-height: 1.7em; }
+
+.about--btn {
+  margin-top: 25px;
+  margin-left: 9px;
+  padding: 15px;
+  background: #333333;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  font-size: 0.8em;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s ease; }
+  .about--btn:hover {
+    background: rgba(51, 51, 51, 0.8);
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
 
 /*animations */
 @keyframes bounce {
