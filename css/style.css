@@ -20,22 +20,23 @@ a, button {
 .navbar--container {
   top: 15%;
   background: #ffffff;
-  height: 170px;
-  width: 70px; }
+  height: 220px;
+  width: 90px; }
 
 .navbar--icon {
-  margin-top: 10px;
-  margin-left: 40px; }
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1.3em; }
 
 .navbar--title {
-  margin-left: 25px;
-  margin-top: 45px; }
+  margin-left: 27px;
+  margin-top: 35px; }
   .navbar--title h4 {
     writing-mode: vertical-rl;
     font-family: "Oswald", sans-serif;
     letter-spacing: .3em;
     text-transform: uppercase;
-    font-size: .7em; }
+    font-size: 1em; }
 
 .header--social {
   position: absolute;
