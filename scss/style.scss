@@ -28,6 +28,18 @@ a, button {
   cursor: pointer;
 }
 
+h1 {
+  font-family: $body;
+  font-size: 4em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $serif;
+  font-size: 2.7em;
+}
+
 .uppercase-xsm {
   font-size: 0.7em;
   font-weight: 200;
@@ -43,22 +55,23 @@ a, button {
 .navbar--container {
   top: 15%;
   background: $white;
-  height: 170px;
-  width: 70px;
+  height: 220px;
+  width: 90px;
 }
 .navbar--icon {
-  margin-top: 10px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1.3em;
 }
 .navbar--title {
-  margin-left: 25px;
-  margin-top: 45px;
+  margin-left: 27px;
+  margin-top: 35px;
   h4 {
     writing-mode: vertical-rl;
     font-family: $bold;
     letter-spacing: .3em;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: 1em;
   }
 }
 
@@ -90,7 +103,7 @@ a, button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('/img/main.jpg');
+  background-image: url('../img/main.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,10 +116,6 @@ a, button {
 }
 .hero-title {
   color: $white;
-  font-family: $body;
-  font-size: 4em;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 }
 .hero--scroll {
   text-align: center;
@@ -143,10 +152,20 @@ section {
   z-index: -1;
   width: 55%;
   height: 100%;
-  background-image: url('/img/about.jpg');
+  background-image: url('../img/about.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.number--box {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 150px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid $white;
 }
 
 .number--box {
@@ -245,6 +264,44 @@ section {
     background: rgba($dark, .8);
     transition: $ease;
     transform: scale(1.03);
+  }
+}
+
+.films--container {
+  background: $dark;
+  .number--box {
+    position: relative;
+    top: 80px;
+    left: 100px;
+  }
+  .number--text {
+    color: $white;
+    margin-top: -77px;
+  }
+}
+
+.films--outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 150px;
+  height: 550px;
+}
+.films--title {
+  h2 {
+    color: $white;
+  }
+}
+
+.films--video {
+  width: 90%;
+  height: 100%;
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
