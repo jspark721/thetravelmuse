@@ -51,8 +51,6 @@ h2 {
 //buttons ----------------
 
 button {
-  margin-top: 25px;
-  margin-left: 9px;
   padding: 15px;
   background: $dark;
   color: $white;
@@ -64,7 +62,8 @@ button {
   text-transform: uppercase;
   transition: $ease;
   &:hover {
-    background: rgba($dark, .8);
+    background: $sky;
+    color: $dark;
     transition: $ease;
     transform: scale(1.03);
   }
@@ -73,7 +72,7 @@ button {
   background: $white;
   color: $dark;
   &:hover {
-    background: $main;
+    background: $sky;
   }
 }
 
@@ -89,9 +88,9 @@ button {
   width: 90px;
 }
 .navbar--icon {
-  margin-top: 20px;
-  margin-left: 50px;
-  font-size: 1.3em;
+  margin-top: 24px;
+  margin-left: 49px;
+  font-size: 1em;
 }
 .navbar--title {
   margin-left: 27px;
@@ -99,9 +98,9 @@ button {
   h4 {
     writing-mode: vertical-rl;
     font-family: $bold;
-    letter-spacing: .3em;
+    letter-spacing: .34em;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -262,6 +261,14 @@ section {
     background: $white;
   }
 }
+.about--title-line {
+  position: absolute;
+  background: $sky;
+  width: 180px;
+  height: 8px;
+  top: 95px;
+  left: 160px;
+}
 
 .about--desc {
   font-family: $body;
@@ -273,14 +280,23 @@ section {
 
 .about--bio {
   letter-spacing: 0.03em;
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.7em;
+}
+
+.about--btn {
+  margin-top: 15%;
+  margin-left: 9px;
+  box-shadow: 9px 9px 0px rgba($sky, 1);
+  &:hover {
+    box-shadow: 9px 9px 0px rgba($dark, 1);
+  }
 }
 
 .films--container {
   position: relative;
   background: $dark;
-  height: 130vh;
+  height: 120vh;
   .number--box {
     position: relative;
     top: 80px;
@@ -332,8 +348,44 @@ section {
 .films--btn {
   width: 100%;
   text-align: center;
-  margin-top: -45px;
+  margin-top: 45px;
   position: absolute;
+}
+
+.services--container {
+  position: relative;
+  height: 70vh;
+  .number--box {
+    border-color: $dark;
+    position: absolute;
+    left: 48%;
+    top: -1px;
+    .number--box-line {
+      position: absolute;
+      background: rgba($sky, .4);
+      width: 130%;
+      height: 8px;
+      z-index: -2;
+      bottom: -12px;
+    }
+  }
+  .num {
+    color: $dark;
+  }
+  .number--text {
+    color: $dark;
+    background: $sky;
+    margin-top: -85px;
+  }
+}
+
+.services--title {
+  width: 100%;
+  position: absolute;
+  margin-top: 120px;
+  h2 {
+    text-align: center;
+  }
 }
 
 /*animations */
