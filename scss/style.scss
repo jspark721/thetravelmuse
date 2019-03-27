@@ -48,9 +48,39 @@ h2 {
   letter-spacing: .4em;
 }
 
+//buttons ----------------
+
+button {
+  margin-top: 25px;
+  margin-left: 9px;
+  padding: 15px;
+  background: $dark;
+  color: $white;
+  border: 0;
+  outline: 0;
+  font-size: 0.8em;
+  font-family: $bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: $ease;
+  &:hover {
+    background: rgba($dark, .8);
+    transition: $ease;
+    transform: scale(1.03);
+  }
+}
+.btn-inverse {
+  background: $white;
+  color: $dark;
+  &:hover {
+    background: $main;
+  }
+}
+
 //front-page header section -------------
 .sticky {
   position: fixed;
+  z-index: 10;
 }
 .navbar--container {
   top: 15%;
@@ -247,62 +277,63 @@ section {
   line-height: 1.7em;
 }
 
-.about--btn {
-  margin-top: 25px;
-  margin-left: 9px;
-  padding: 15px;
-  background: $dark;
-  color: $white;
-  border: 0;
-  outline: 0;
-  font-size: 0.8em;
-  font-family: $bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition: $ease;
-  &:hover {
-    background: rgba($dark, .8);
-    transition: $ease;
-    transform: scale(1.03);
-  }
-}
-
 .films--container {
+  position: relative;
   background: $dark;
+  height: 130vh;
   .number--box {
     position: relative;
     top: 80px;
-    left: 100px;
+    left: 89px;
   }
   .number--text {
     color: $white;
     margin-top: -77px;
   }
 }
-
-.films--outline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $white;
-  margin-left: 200px;
-  margin-right: 100px;
-  margin-top: 150px;
-  height: 550px;
-}
 .films--title {
+  margin-left: 135px;
+  margin-top: 105px;
   h2 {
     color: $white;
+    margin-bottom: 35px;
   }
+}
+
+.films--outline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 40px;
+  margin-left: 135px;
+  margin-right: 100px;
 }
 
 .films--video {
-  width: 90%;
-  height: 100%;
+  border: 1px solid $white;
+  height: 250px;
+  overflow: hidden;
   iframe {
-    width: 100%;
-    height: 100%;
+    margin-top: -50px;
   }
+}
+
+// .arrow--right {
+//   position: absolute;
+//   top: 45%;
+//   right: 55px;
+//   i {
+//     font-size: 6em;
+//     color: $white;
+//     opacity: .9;
+//   }
+// }
+
+.films--btn {
+  width: 100%;
+  text-align: center;
+  margin-top: -45px;
+  position: absolute;
 }
 
 /*animations */
