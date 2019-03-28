@@ -7,6 +7,16 @@ body {
 a, button {
   cursor: pointer; }
 
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4em;
+  letter-spacing: 5px;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.7em; }
+
 .uppercase-xsm {
   font-size: 0.7em;
   font-weight: 200;
@@ -14,8 +24,32 @@ a, button {
   text-transform: uppercase;
   letter-spacing: .4em; }
 
+button {
+  padding: 15px;
+  background: #333333;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  font-size: 0.8em;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s ease; }
+  button:hover {
+    background: #82CFEE;
+    color: #333333;
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
+
+.btn-inverse {
+  background: #ffffff;
+  color: #333333; }
+  .btn-inverse:hover {
+    background: #82CFEE; }
+
 .sticky {
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
 
 .navbar--container {
   top: 15%;
@@ -24,9 +58,9 @@ a, button {
   width: 90px; }
 
 .navbar--icon {
-  margin-top: 20px;
-  margin-left: 50px;
-  font-size: 1.3em; }
+  margin-top: 24px;
+  margin-left: 49px;
+  font-size: 1em; }
 
 .navbar--title {
   margin-left: 27px;
@@ -34,9 +68,9 @@ a, button {
   .navbar--title h4 {
     writing-mode: vertical-rl;
     font-family: "Oswald", sans-serif;
-    letter-spacing: .3em;
+    letter-spacing: .34em;
     text-transform: uppercase;
-    font-size: 1em; }
+    font-size: 0.9em; }
 
 .header--social {
   position: absolute;
@@ -74,11 +108,7 @@ a, button {
   margin-bottom: 90px; }
 
 .hero-title {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 4em;
-  letter-spacing: 5px;
-  text-transform: uppercase; }
+  color: #ffffff; }
 
 .hero--scroll {
   text-align: center;
@@ -113,6 +143,15 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+.number--box {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 150px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ffffff; }
 
 .number--box {
   position: absolute;
@@ -172,6 +211,14 @@ section {
     margin-left: 10px;
     background: #ffffff; }
 
+.about--title-line {
+  position: absolute;
+  background: #82CFEE;
+  width: 180px;
+  height: 8px;
+  top: 95px;
+  left: 160px; }
+
 .about--desc {
   font-family: "Open Sans", sans-serif;
   margin-top: 5%;
@@ -181,26 +228,84 @@ section {
 
 .about--bio {
   letter-spacing: 0.03em;
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.7em; }
 
 .about--btn {
-  margin-top: 25px;
+  margin-top: 15%;
   margin-left: 9px;
-  padding: 15px;
-  background: #333333;
-  color: #ffffff;
-  border: 0;
-  outline: 0;
-  font-size: 0.8em;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition: all 0.3s ease; }
+  box-shadow: 9px 9px 0px #82cfee; }
   .about--btn:hover {
-    background: rgba(51, 51, 51, 0.8);
-    transition: all 0.3s ease;
-    transform: scale(1.03); }
+    box-shadow: 9px 9px 0px #333333; }
+
+.films--container {
+  position: relative;
+  background: #333333;
+  height: 120vh; }
+  .films--container .number--box {
+    position: relative;
+    top: 80px;
+    left: 89px; }
+  .films--container .number--text {
+    color: #ffffff;
+    margin-top: -77px; }
+
+.films--title {
+  margin-left: 135px;
+  margin-top: 105px; }
+  .films--title h2 {
+    color: #ffffff;
+    margin-bottom: 35px; }
+
+.films--outline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 40px;
+  margin-left: 135px;
+  margin-right: 100px; }
+
+.films--video {
+  border: 1px solid #ffffff;
+  height: 250px;
+  overflow: hidden; }
+  .films--video iframe {
+    margin-top: -50px; }
+
+.films--btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+  position: absolute; }
+
+.services--container {
+  position: relative;
+  height: 70vh; }
+  .services--container .number--box {
+    border-color: #333333;
+    position: absolute;
+    left: 48%;
+    top: -1px; }
+    .services--container .number--box .number--box-line {
+      position: absolute;
+      background: rgba(130, 207, 238, 0.4);
+      width: 130%;
+      height: 8px;
+      z-index: -2;
+      bottom: -12px; }
+  .services--container .num {
+    color: #333333; }
+  .services--container .number--text {
+    color: #333333;
+    background: #82CFEE;
+    margin-top: -85px; }
+
+.services--title {
+  width: 100%;
+  position: absolute;
+  margin-top: 120px; }
+  .services--title h2 {
+    text-align: center; }
 
 /*animations */
 @keyframes bounce {

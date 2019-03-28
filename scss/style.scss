@@ -28,6 +28,18 @@ a, button {
   cursor: pointer;
 }
 
+h1 {
+  font-family: $body;
+  font-size: 4em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $serif;
+  font-size: 2.7em;
+}
+
 .uppercase-xsm {
   font-size: 0.7em;
   font-weight: 200;
@@ -36,9 +48,38 @@ a, button {
   letter-spacing: .4em;
 }
 
+//buttons ----------------
+
+button {
+  padding: 15px;
+  background: $dark;
+  color: $white;
+  border: 0;
+  outline: 0;
+  font-size: 0.8em;
+  font-family: $bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: $ease;
+  &:hover {
+    background: $sky;
+    color: $dark;
+    transition: $ease;
+    transform: scale(1.03);
+  }
+}
+.btn-inverse {
+  background: $white;
+  color: $dark;
+  &:hover {
+    background: $sky;
+  }
+}
+
 //front-page header section -------------
 .sticky {
   position: fixed;
+  z-index: 10;
 }
 .navbar--container {
   top: 15%;
@@ -47,9 +88,9 @@ a, button {
   width: 90px;
 }
 .navbar--icon {
-  margin-top: 20px;
-  margin-left: 50px;
-  font-size: 1.3em;
+  margin-top: 24px;
+  margin-left: 49px;
+  font-size: 1em;
 }
 .navbar--title {
   margin-left: 27px;
@@ -57,9 +98,9 @@ a, button {
   h4 {
     writing-mode: vertical-rl;
     font-family: $bold;
-    letter-spacing: .3em;
+    letter-spacing: .34em;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -104,10 +145,6 @@ a, button {
 }
 .hero-title {
   color: $white;
-  font-family: $body;
-  font-size: 4em;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 }
 .hero--scroll {
   text-align: center;
@@ -148,6 +185,16 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.number--box {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 150px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid $white;
 }
 
 .number--box {
@@ -214,6 +261,14 @@ section {
     background: $white;
   }
 }
+.about--title-line {
+  position: absolute;
+  background: $sky;
+  width: 180px;
+  height: 8px;
+  top: 95px;
+  left: 160px;
+}
 
 .about--desc {
   font-family: $body;
@@ -225,27 +280,111 @@ section {
 
 .about--bio {
   letter-spacing: 0.03em;
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.7em;
 }
 
 .about--btn {
-  margin-top: 25px;
+  margin-top: 15%;
   margin-left: 9px;
-  padding: 15px;
-  background: $dark;
-  color: $white;
-  border: 0;
-  outline: 0;
-  font-size: 0.8em;
-  font-family: $bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition: $ease;
+  box-shadow: 9px 9px 0px rgba($sky, 1);
   &:hover {
-    background: rgba($dark, .8);
-    transition: $ease;
-    transform: scale(1.03);
+    box-shadow: 9px 9px 0px rgba($dark, 1);
+  }
+}
+
+.films--container {
+  position: relative;
+  background: $dark;
+  height: 120vh;
+  .number--box {
+    position: relative;
+    top: 80px;
+    left: 89px;
+  }
+  .number--text {
+    color: $white;
+    margin-top: -77px;
+  }
+}
+.films--title {
+  margin-left: 135px;
+  margin-top: 105px;
+  h2 {
+    color: $white;
+    margin-bottom: 35px;
+  }
+}
+
+.films--outline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 40px;
+  margin-left: 135px;
+  margin-right: 100px;
+}
+
+.films--video {
+  border: 1px solid $white;
+  height: 250px;
+  overflow: hidden;
+  iframe {
+    margin-top: -50px;
+  }
+}
+
+// .arrow--right {
+//   position: absolute;
+//   top: 45%;
+//   right: 55px;
+//   i {
+//     font-size: 6em;
+//     color: $white;
+//     opacity: .9;
+//   }
+// }
+
+.films--btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+  position: absolute;
+}
+
+.services--container {
+  position: relative;
+  height: 70vh;
+  .number--box {
+    border-color: $dark;
+    position: absolute;
+    left: 48%;
+    top: -1px;
+    .number--box-line {
+      position: absolute;
+      background: rgba($sky, .4);
+      width: 130%;
+      height: 8px;
+      z-index: -2;
+      bottom: -12px;
+    }
+  }
+  .num {
+    color: $dark;
+  }
+  .number--text {
+    color: $dark;
+    background: $sky;
+    margin-top: -85px;
+  }
+}
+
+.services--title {
+  width: 100%;
+  position: absolute;
+  margin-top: 120px;
+  h2 {
+    text-align: center;
   }
 }
 
