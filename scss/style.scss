@@ -530,6 +530,7 @@ section {
   .overlay {
     height: 90vh;
     margin-top: 0;
+    background: rgba($dark, .2);
   }
 }
 .contact--box {
@@ -537,7 +538,7 @@ section {
   width: 50%;
   left: 25%;
   height: 250px;
-  background: rgba(lighten($dark, 10%), .8);
+  background: rgba(lighten($dark, 10%), .9);
   text-align: center;
   button {
     margin-top: 20px;
