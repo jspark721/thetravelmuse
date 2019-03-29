@@ -320,7 +320,7 @@ section {
 .films--container {
   position: relative;
   z-index: 4;
-  background: $dark;
+  background: lighten($dark, 10%);
   height: 120vh;
   .number--box {
     position: relative;
@@ -452,7 +452,7 @@ section {
     top: -50px;
     .number--box-line {
       position: absolute;
-      background: rgba($white, .5);
+      background: rgba($white, .4);
       width: 130%;
       height: 8px;
       z-index: -2;
@@ -479,7 +479,7 @@ section {
 
 .services--item {
   position: relative;
-  margin-top: 135px;
+  margin-top: 170px;
   border: 1px solid rgba($white, .2);
   height: 280px;
   overflow: hidden;
@@ -537,14 +537,10 @@ section {
   width: 50%;
   left: 25%;
   height: 250px;
-  background: $main;
+  background: rgba(lighten($dark, 10%), .8);
   text-align: center;
   button {
     margin-top: 20px;
-    &:hover {
-      background: $dark;
-      color: $white;
-    }
   }
 }
 .contact--title {
@@ -564,6 +560,7 @@ section {
 .contact--text {
   padding: 70px;
   font-family: $body;
+  color: $white;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .7em;
@@ -574,7 +571,7 @@ section {
   width: 10%;
   left: 45%;
   height: 5px;
-  background: $white;
+  background: $main;
 }
 
 footer {

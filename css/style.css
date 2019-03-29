@@ -264,7 +264,7 @@ section {
 .films--container {
   position: relative;
   z-index: 4;
-  background: #333333;
+  background: #4d4d4d;
   height: 120vh; }
   .films--container .number--box {
     position: relative;
@@ -370,7 +370,7 @@ section {
     top: -50px; }
     .services--container .number--box .number--box-line {
       position: absolute;
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.4);
       width: 130%;
       height: 8px;
       z-index: -2;
@@ -391,7 +391,7 @@ section {
 
 .services--item {
   position: relative;
-  margin-top: 135px;
+  margin-top: 170px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 280px;
   overflow: hidden;
@@ -443,13 +443,10 @@ section {
   width: 50%;
   left: 25%;
   height: 250px;
-  background: #A7C5D1;
+  background: rgba(77, 77, 77, 0.8);
   text-align: center; }
   .contact--box button {
     margin-top: 20px; }
-    .contact--box button:hover {
-      background: #333333;
-      color: #ffffff; }
 
 .contact--title {
   position: absolute;
@@ -466,6 +463,7 @@ section {
 .contact--text {
   padding: 70px;
   font-family: "Open Sans", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .7em; }
@@ -476,7 +474,7 @@ section {
   width: 10%;
   left: 45%;
   height: 5px;
-  background: #ffffff; }
+  background: #A7C5D1; }
 
 footer {
   height: 20vh;
