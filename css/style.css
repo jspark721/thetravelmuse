@@ -338,6 +338,45 @@ section {
     letter-spacing: 4px;
     margin-bottom: -35px; }
 
+.work--container {
+  height: 70vh;
+  background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+
+.work--title {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center; }
+  .work--title h2 {
+    color: #ffffff;
+    margin: 0;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 3.5em; }
+
+.work--smcap {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  color: #ffffff; }
+
+.work--summary {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  font-size: 0.85em; }
+
+.overlay {
+  margin-top: -70vh;
+  height: 100%;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.3); }
+
 /*animations */
 @keyframes bounce {
   50% {
