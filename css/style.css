@@ -79,6 +79,9 @@ button {
   margin-top: 24px;
   margin-left: 49px;
   font-size: 1em; }
+  .navbar--icon:hover {
+    color: #A7C5D1;
+    cursor: pointer; }
 
 .navbar--title {
   margin-left: 27px;
@@ -89,6 +92,48 @@ button {
     letter-spacing: .34em;
     text-transform: uppercase;
     font-size: 0.9em; }
+
+.nav--open {
+  height: 100vh;
+  width: 300px;
+  background: #ffffff;
+  transition: all 0.4s ease-out;
+  opacity: 1; }
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px; }
+  .nav--open-icon i {
+    font-size: 1.8em;
+    color: #A7C5D1; }
+    .nav--open-icon i:hover {
+      color: #333333;
+      cursor: pointer; }
+
+.nav--open-title {
+  font-family: "Playfair Display", serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+  margin-top: 35%; }
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px; }
+  .nav--open-menu a {
+    font-size: 2em;
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+    padding: 15px 0; }
+
+.close {
+  transform: translateX(-300px);
+  transition: all 0.4s ease-out;
+  opacity: 0; }
 
 .header--social {
   position: absolute;

@@ -1,5 +1,6 @@
 /* variables */
 $ease: all .3s ease;
+$ease-slow: all .4s ease-out;
 
 //colors ---------------
 $white: #ffffff;
@@ -104,6 +105,10 @@ button {
   margin-top: 24px;
   margin-left: 49px;
   font-size: 1em;
+  &:hover {
+    color: $main;
+    cursor: pointer;
+  }
 }
 .navbar--title {
   margin-left: 27px;
@@ -115,6 +120,58 @@ button {
     text-transform: uppercase;
     font-size: 0.9em;
   }
+}
+
+//navigation open
+
+.nav--open {
+  height: 100vh;
+  width: 300px;
+  background: $white;
+  transition: $ease-slow;
+  opacity: 1;
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+  i {
+    font-size: 1.8em;
+    color: $main;
+    &:hover {
+      color: $dark;
+      cursor: pointer;
+    }
+  }
+}
+
+.nav--open-title {
+  font-family: $serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  a {
+    font-size: 2em;
+    font-weight: 100;
+    font-family: $serif;
+    padding: 15px 0;
+  }
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: $ease-slow;
+  opacity: 0;
 }
 
 .header--social {
