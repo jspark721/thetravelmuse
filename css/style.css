@@ -549,3 +549,31 @@ footer {
 @keyframes bounce {
   50% {
     transform: translateY(-5px); } }
+
+/* media query screen sizes */
+@media only screen and (max-width: 965px) {
+  .services--grid {
+    margin: 0;
+    grid-gap: 10px; } }
+
+@media only screen and (max-width: 770px) {
+  .services--grid {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 575px) {
+  .services--container {
+    height: 100vh; }
+  .services--grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    height: 100vh; }
+  .services--item {
+    margin: 0;
+    text-align: center; }
+    .services--item:hover .img-overlay {
+      background: rgba(167, 197, 209, 0.5); }
+  .services--item-text {
+    right: 0;
+    top: 70px; }
+  .services--item-img {
+    left: 0; } }
