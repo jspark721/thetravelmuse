@@ -663,8 +663,8 @@ footer {
 /* media query screen sizes */
 $xlarge: 1200px;
 $large: 965px;
-$medium: 770px;
-$small: 575px;
+$medium: 800px;
+$small: 600px;
 $xsmall: 450px;
 
 @media only screen and (max-width: $xlarge) {
@@ -676,15 +676,69 @@ $xsmall: 450px;
     margin: 0;
     grid-gap: 10px;
   }
+  .contact--title {
+    width: 100%;
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: $medium) {
+  .films--grid {
+    width: 100%;
+    margin-left: 0;
+    grid-gap: 5px;
+  }
+  .films--title {
+    margin-left: 90px;
+  }
   .services--grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact--box {
+    width: 65%;
+    left: 17.5%;
   }
 }
 
 @media only screen and (max-width: $small) {
+  .number--box {
+    opacity: 0;
+  }
+  .nav--open {
+    width: 100%;
+  }
+  .close {
+    transform: translateX(-100%);
+  }
+  #about {
+    height: 80vh;
+  }
+  .about--left {
+    display: none;
+  }
+  .about--right {
+    width: 100%;
+    left: 0;
+  }
+  .about--top-corner {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 0;
+    padding: 5px;
+  }
+  .about--title {
+    top: 15%;
+    text-align: center;
+    h2 {
+      margin-left: 0;
+    }
+  }
+  .about--desc {
+    margin: 0 10%;
+  }
+  .about--btn {
+    margin-top: 10%;
+  }
   .services--container {
     height: 100vh;
   }
