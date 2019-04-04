@@ -630,6 +630,7 @@ section {
 
 footer {
   height: 20vh;
+  position: relative;
   width: 100%;
   text-align: center;
 }
@@ -645,8 +646,13 @@ footer {
     }
   }
 }
+.footer--bottom {
+  width: 100%;
+  position: absolute;
+  height: 20%;
+  bottom: 0;
+}
 .footer--text {
-  margin-top: 30px;
   font-family: $body;
   font-size: .5em;
   letter-spacing: 2px;
@@ -668,7 +674,6 @@ $small: 600px;
 $xsmall: 450px;
 
 @media only screen and (max-width: $xlarge) {
-
 }
 
 @media only screen and (max-width: $large) {
@@ -739,6 +744,18 @@ $xsmall: 450px;
   .about--btn {
     margin-top: 10%;
   }
+  .films--title {
+    margin-left: 0px;
+    text-align: center;
+    h2 {
+      font-size: 5em;
+    }
+  }
+  .work--title {
+    h2 {
+      font-size: 3em;
+    }
+  }
   .services--container {
     height: 100vh;
   }
@@ -762,5 +779,35 @@ $xsmall: 450px;
   }
   .services--item-img {
     left: 0;
+  }
+  .contact--title {
+    h2 {
+      font-size: 5.5em;
+    }
+  }
+  .footer--bottom {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: $xsmall) {
+  .films--container {
+    height: 140vh;
+    padding-bottom: 15em;
+  }
+  .films--grid {
+    grid-template-columns: 1fr;
+  }
+  .work--title {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .contact--title {
+    h2 {
+      font-size: 4.5em;
+    }
+  }
+  .contact--text {
+    padding: 45px;
   }
 }

@@ -525,6 +525,7 @@ section {
 
 footer {
   height: 20vh;
+  position: relative;
   width: 100%;
   text-align: center; }
 
@@ -538,8 +539,13 @@ footer {
       color: #333333;
       transform: scale(1.1); }
 
+.footer--bottom {
+  width: 100%;
+  position: absolute;
+  height: 20%;
+  bottom: 0; }
+
 .footer--text {
-  margin-top: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: .5em;
   letter-spacing: 2px;
@@ -600,6 +606,13 @@ footer {
     margin: 0 10%; }
   .about--btn {
     margin-top: 10%; }
+  .films--title {
+    margin-left: 0px;
+    text-align: center; }
+    .films--title h2 {
+      font-size: 5em; }
+  .work--title h2 {
+    font-size: 3em; }
   .services--container {
     height: 100vh; }
   .services--grid {
@@ -615,4 +628,22 @@ footer {
     right: 0;
     top: 70px; }
   .services--item-img {
-    left: 0; } }
+    left: 0; }
+  .contact--title h2 {
+    font-size: 5.5em; }
+  .footer--bottom {
+    padding: 10px; } }
+
+@media only screen and (max-width: 450px) {
+  .films--container {
+    height: 140vh;
+    padding-bottom: 15em; }
+  .films--grid {
+    grid-template-columns: 1fr; }
+  .work--title {
+    width: 90%;
+    margin-left: 5%; }
+  .contact--title h2 {
+    font-size: 4.5em; }
+  .contact--text {
+    padding: 45px; } }
