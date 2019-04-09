@@ -32,10 +32,6 @@ a, button {
 a {
   text-decoration: none;
   color: $main;
-  &:hover {
-    background: $main;
-    color: $dark;
-  }
 }
 h1 {
   font-family: $body;
@@ -100,6 +96,7 @@ button {
   background: $white;
   height: 220px;
   width: 90px;
+  box-shadow: 1px 1px 5px rgba($dark, .1);
 }
 .navbar--icon {
   margin-top: 24px;
@@ -657,6 +654,67 @@ footer {
   font-size: .5em;
   letter-spacing: 2px;
   text-transform: uppercase;
+  a {
+    transition: $ease;
+    &:hover {
+      background: $main;
+      color: $dark;
+    }
+  }
+}
+
+
+/*sub pages header */
+.header-top {
+  width: 100%;
+  background: $white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-family: $body;
+  letter-spacing: -1px;
+  margin-left: 40px;
+}
+.social-icons-sm {
+  margin-right: 10px;
+  display: grid;
+  width: 50px;
+  height: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* about page */
+.about-page-main {
+  position: relative;
+  width: 80%;
+  height: 70vh;
+  margin-left: 10%;
+  margin-bottom: 90px;
+  background: url('../img/header.jpg') no-repeat top center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.about-page-title {
+  font-family: $serif;
+  font-size: 5.2em;
+  font-weight: 800;
+  position: absolute;
+  right: -94px;
+  top: 60px;
+  color: $white;
+  opacity: .8;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.about-page-desc {
+  background: $main;
 }
 
 /*animations */

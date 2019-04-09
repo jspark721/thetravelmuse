@@ -17,9 +17,6 @@ a, button {
 a {
   text-decoration: none;
   color: #A7C5D1; }
-  a:hover {
-    background: #A7C5D1;
-    color: #333333; }
 
 h1 {
   font-family: "Open Sans", sans-serif;
@@ -73,7 +70,8 @@ button {
   top: 15%;
   background: #ffffff;
   height: 220px;
-  width: 90px; }
+  width: 90px;
+  box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.1); }
 
 .navbar--icon {
   margin-top: 24px;
@@ -550,6 +548,60 @@ footer {
   font-size: .5em;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  .footer--text a {
+    transition: all 0.3s ease; }
+    .footer--text a:hover {
+      background: #A7C5D1;
+      color: #333333; }
+
+/*sub pages header */
+.header-top {
+  width: 100%;
+  background: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -1px;
+  margin-left: 40px; }
+
+.social-icons-sm {
+  margin-right: 10px;
+  display: grid;
+  width: 50px;
+  height: 50px;
+  grid-template-columns: 1fr 1fr; }
+
+/* about page */
+.about-page-main {
+  position: relative;
+  width: 80%;
+  height: 70vh;
+  margin-left: 10%;
+  margin-bottom: 90px;
+  background: url("../img/header.jpg") no-repeat top center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
+.about-page-title {
+  font-family: "Playfair Display", serif;
+  font-size: 5.2em;
+  font-weight: 800;
+  position: absolute;
+  right: -94px;
+  top: 60px;
+  color: #ffffff;
+  opacity: .8;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); }
+
+.about-page-desc {
+  background: #A7C5D1; }
 
 /*animations */
 @keyframes bounce {
