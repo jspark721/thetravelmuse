@@ -619,7 +619,7 @@ footer {
   position: absolute;
   width: 80%;
   height: 50px;
-  left: 100px;
+  left: 140px;
   top: 60px;
   display: flex;
   float: left; }
@@ -645,7 +645,7 @@ footer {
   position: absolute;
   width: 70%;
   height: 50%;
-  left: 100px;
+  left: 140px;
   top: 170px; }
   .about-intro-desc .large-ptext {
     margin-top: -40px; }
