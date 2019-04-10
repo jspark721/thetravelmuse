@@ -33,6 +33,10 @@ a {
   text-decoration: none;
   color: $main;
 }
+p {
+  font-family: $body;
+  line-height: 1.5;
+}
 h1 {
   font-family: $body;
   font-size: 4em;
@@ -56,6 +60,12 @@ h2 {
 .cursive {
   font-family: $cursive;
   font-weight: 100;
+}
+
+.large-ptext {
+  font-family: $serif;
+  font-size: 2.8em;
+  font-weight: 700;
 }
 
 //buttons ----------------
@@ -674,9 +684,10 @@ footer {
   align-items: center;
 }
 .logo {
-  font-family: $body;
-  letter-spacing: -1px;
-  margin-left: 40px;
+  font-family: $cursive;
+  font-size: 4em;
+  margin: 0;
+  font-weight: 100;
 }
 .social-icons-sm {
   margin-right: 10px;
@@ -689,9 +700,9 @@ footer {
 /* about page */
 .about-page-main {
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 70vh;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 90px;
   background: url('../img/header.jpg') no-repeat top center fixed;
   -webkit-background-size: contain;
@@ -713,8 +724,180 @@ footer {
   transform: rotate(180deg);
 }
 
-.about-page-desc {
+.about-page-intro {
+  background: $white;
+  position: relative;
+  height: 70vh;
+}
+
+.about-intro-title {
+  position: absolute;
+  width: 80%;
+  height: 50px;
+  left: 100px;
+  top: 80px;
+  display: flex;
+  float: left;
+}
+.intro-title {
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $main;
+  font-family: $body;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+.about-intro-line {
+  align-self: center;
+  margin-left: 5%;
+  width: 50%;
+  height: 2px;
   background: $main;
+}
+.about-intro-desc {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 100px;
+  top: 170px;
+  .large-ptext {
+    margin-top: -40px;
+  }
+}
+
+.about-intro-img {
+  position: absolute;
+  z-index: 3;
+  top: 440px;
+  left: 100px;
+  width: 480px;
+  height: 580px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.about-page-journey {
+  height: 120vh;
+  background: $main;
+  position: relative;
+}
+.about-journey-desc {
+  position: absolute;
+  top: -90px;
+  width: 50%;
+  right: 0;
+  .intro-title {
+    white-space: normal;
+  }
+}
+.about-journey-vertical-line {
+  background: $dark;
+  width: 2px;
+  height: 120px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.about-journey-desc-textbox {
+  position: absolute;
+  width: 540px;
+  height: 300px;
+  z-index: 2;
+  p {
+    margin: 5px;
+    font-size: 2em;
+    line-height: 2em;
+  }
+}
+.about-journey-bottom {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  bottom: 0;
+  background: $white;
+}
+
+.about-journey-center-box {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  height: 50%;
+  position: absolute;
+  top: 27%;
+  left: 100px;
+}
+.journey-item {
+  background: $dark;;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  transition: $ease;
+}
+.journey-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: .7;
+}
+.journey-item-city {
+  position: absolute;
+  top: 40%;
+  font-family: $cursive;
+  color: lighten($main, 10%);
+  margin: 0 30px;
+  text-transform: lowercase;
+  font-size: 3.3em;
+  letter-spacing: 0;
+}
+.journey-item-country {
+  position: absolute;
+  top: 40%;
+  color: $white;
+  font-family: $body;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
+
+.about-page-cta {
+  background: $main;
+  height: 50vh;
+  position: relative;
+}
+.about-cta-text {
+  position: absolute;
+  margin-top: 40px;
+  left: 10%;
+  width: 80%;
+  p {
+    font-family: $serif;
+    font-size: 1.45em;
+    line-height: 1.7;
+  }
+  button {
+    margin-top: 40px;
+    margin-right: 15px;
+    &:hover {
+      background: $white;
+      color: $dark;
+    }
+  }
+}
+.about-cta-signature {
+  font-family: $cursive;
+  color: $white;
+  font-size: 5em;
+  position: absolute;
+  right: 140px;
+  bottom: 140px;
 }
 
 /*animations */
