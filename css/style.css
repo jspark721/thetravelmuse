@@ -45,7 +45,7 @@ h2 {
 
 .large-ptext {
   font-family: "Playfair Display", serif;
-  font-size: 2.8em;
+  font-size: 2.3em;
   font-weight: 700; }
 
 button {
@@ -196,17 +196,8 @@ button {
   .hero--scroll a {
     color: #ffffff; }
 
-section {
-  height: 100vh;
-  width: 100vw; }
-
-.less-height {
-  height: 70vh; }
-
 .about--container {
-  position: relative;
-  height: 100%;
-  z-index: 5; }
+  min-height: 100vh; }
 
 .about--left {
   position: absolute;
@@ -372,6 +363,7 @@ section {
   position: absolute; }
 
 .work--container {
+  position: relative;
   height: 70vh;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80");
@@ -382,6 +374,7 @@ section {
   align-items: center; }
 
 .work--title {
+  position: absolute;
   width: 60%;
   margin-left: 20%;
   text-align: center; }
@@ -407,7 +400,6 @@ section {
   font-size: 0.85em; }
 
 .overlay {
-  margin-top: -70vh;
   height: 100%;
   width: 100%;
   background: rgba(51, 51, 51, 0.4); }
@@ -587,24 +579,29 @@ footer {
 
 /* about page */
 .about-page-main {
-  position: relative;
-  width: 90%;
+  width: 100%;
   height: 70vh;
+  margin-bottom: 90px; }
+
+.about-page-hero-img {
+  position: relative;
   margin-left: 5%;
-  margin-bottom: 90px;
+  width: 90%;
+  height: 100%;
   background: url("../img/header.jpg") no-repeat top center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .about-page-title {
-  font-family: "Playfair Display", serif;
-  font-size: 5.2em;
-  font-weight: 800;
   position: absolute;
-  right: -94px;
-  top: 60px;
+  right: -15px;
+  bottom: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  font-weight: 800;
   color: #ffffff;
   opacity: .8;
   writing-mode: vertical-rl;
