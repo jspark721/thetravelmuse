@@ -64,8 +64,9 @@ h2 {
 
 .large-ptext {
   font-family: $serif;
-  font-size: 2.3em;
+  font-size: 1.3em;
   font-weight: 700;
+  line-height: 1.8em;
 }
 
 //buttons ----------------
@@ -721,7 +722,7 @@ footer {
 .about-page-intro {
   background: $white;
   position: relative;
-  height: 70vh;
+  height: 85vh;
 }
 
 .about-intro-title {
@@ -746,19 +747,25 @@ footer {
 .about-intro-line {
   align-self: center;
   margin-left: 5%;
-  width: 50%;
+  width: 60%;
   height: 2px;
   background: $main;
 }
 .about-intro-desc {
   position: absolute;
-  width: 70%;
+  width: 80%;
   height: 50%;
   left: 140px;
   top: 170px;
   .large-ptext {
     margin-top: -40px;
+    text-align: justify;
   }
+}
+.right-side {
+  width: 50%;
+  margin-left: 50%;
+  padding-top: 5%;
 }
 
 .about-intro-img {
@@ -781,9 +788,9 @@ footer {
 }
 .about-journey-desc {
   position: absolute;
-  top: -90px;
-  width: 50%;
-  right: 0;
+  top: -120px;
+  width: 45%;
+  right: 3%;
   .intro-title {
     white-space: normal;
   }
@@ -797,13 +804,14 @@ footer {
 }
 .about-journey-desc-textbox {
   position: absolute;
-  width: 540px;
-  height: 300px;
+  width: 480px;
   z-index: 2;
   p {
     margin: 5px;
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1.7em;
+    font-style: italic;
+    text-align: justify;
   }
 }
 .about-journey-bottom {
