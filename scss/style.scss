@@ -336,28 +336,30 @@ button {
 .about--title-line {
   position: absolute;
   background: $main;
-  width: 180px;
+  width: 350px;
   height: 8px;
-  top: 95px;
-  left: 160px;
+  top: 120px;
+  left: 80px;
 }
 
 .about--desc {
-  font-family: $body;
-  margin-top: 5%;
-  margin-left: 25%;
-  margin-right: 8%;
-  text-align: justify;
+  font-family: $serif;
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-right: 10%;
+  background: $white;
+  padding: 4px 10px 3px 10px;
 }
 
 .about--bio {
   letter-spacing: 0.03em;
-  font-size: 0.8em;
+  font-size: 1.8em;
   line-height: 1.7em;
+  font-style: italic;
 }
 
 .about--btn {
-  margin-top: 15%;
+  margin-top: 12%;
   margin-left: 9px;
   box-shadow: 9px 9px 0px rgba($main, 1);
   &:hover {
