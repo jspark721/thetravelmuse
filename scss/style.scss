@@ -678,6 +678,11 @@ footer {
   font-size: 4em;
   margin: 0;
   font-weight: 100;
+  transition: $ease;
+  &:hover {
+    color: $dark;
+    transition: $ease;
+  }
 }
 .social-icons-sm {
   margin-right: 10px;

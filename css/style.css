@@ -569,7 +569,11 @@ footer {
   font-family: "Mansfield", cursive;
   font-size: 4em;
   margin: 0;
-  font-weight: 100; }
+  font-weight: 100;
+  transition: all 0.3s ease; }
+  .logo:hover {
+    color: #333333;
+    transition: all 0.3s ease; }
 
 .social-icons-sm {
   margin-right: 10px;
