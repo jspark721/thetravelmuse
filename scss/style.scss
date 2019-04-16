@@ -821,10 +821,15 @@ footer {
 }
 .about-journey-bottom {
   width: 100%;
-  height: 55%;
+  height: 60%;
   position: absolute;
   bottom: 0;
-  background: $white;
+  .intro-title {
+    color: $white;
+  }
+  .about-intro-line {
+    background: $white;
+  }
 }
 
 .about-journey-center-box {
@@ -874,38 +879,6 @@ footer {
   margin-top: 55px;
 }
 
-.about-page-cta {
-  background: $main;
-  height: 50vh;
-  position: relative;
-}
-.about-cta-text {
-  position: absolute;
-  margin-top: 40px;
-  left: 10%;
-  width: 80%;
-  p {
-    font-family: $serif;
-    font-size: 1.45em;
-    line-height: 1.7;
-  }
-  button {
-    margin-top: 40px;
-    margin-right: 15px;
-    &:hover {
-      background: $white;
-      color: $dark;
-    }
-  }
-}
-.about-cta-signature {
-  font-family: $cursive;
-  color: $white;
-  font-size: 5em;
-  position: absolute;
-  right: 140px;
-  bottom: 140px;
-}
 
 /*animations */
 @keyframes bounce {

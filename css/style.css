@@ -702,10 +702,13 @@ footer {
 
 .about-journey-bottom {
   width: 100%;
-  height: 55%;
+  height: 60%;
   position: absolute;
-  bottom: 0;
-  background: #ffffff; }
+  bottom: 0; }
+  .about-journey-bottom .intro-title {
+    color: #ffffff; }
+  .about-journey-bottom .about-intro-line {
+    background: #ffffff; }
 
 .about-journey-center-box {
   display: grid;
@@ -752,35 +755,6 @@ footer {
   letter-spacing: 2px;
   margin-left: 50px;
   margin-top: 55px; }
-
-.about-page-cta {
-  background: #A7C5D1;
-  height: 50vh;
-  position: relative; }
-
-.about-cta-text {
-  position: absolute;
-  margin-top: 40px;
-  left: 10%;
-  width: 80%; }
-  .about-cta-text p {
-    font-family: "Playfair Display", serif;
-    font-size: 1.45em;
-    line-height: 1.7; }
-  .about-cta-text button {
-    margin-top: 40px;
-    margin-right: 15px; }
-    .about-cta-text button:hover {
-      background: #ffffff;
-      color: #333333; }
-
-.about-cta-signature {
-  font-family: "Mansfield", cursive;
-  color: #ffffff;
-  font-size: 5em;
-  position: absolute;
-  right: 140px;
-  bottom: 140px; }
 
 /*animations */
 @keyframes bounce {
