@@ -1,20 +1,77 @@
 @import 'variables';
 
-.page--header {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+.travelmuse-logo {
+  font-family: $cursive;
+  font-size: 3.5em;
+  color: $white;
+  position: absolute;
+  z-index: 2;
+  left: 0.6em;
+  top: 0.4em;
+  text-shadow: 1px 1px 2px rgba($dark, .5);
+}
+.logo {
+  color: $white;
+  transition: $ease;
+  &:hover {
+    font-size: 1.03em;
+    transition: $ease;
+  }
 }
 
-.page--header-top {
+.page--header {
+  height: 110vh;
   width: 100%;
-  height: 50%;
+  position: relative;
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page--title {
+  margin-top: -70px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  color: $white;
+  text-align: right;
+  text-shadow: 1px 1px 2px rgba($dark, .5);
 }
 
 .page--header-bottom {
   width: 100%;
-  height: 50%;
+  height: 35%;
   position: absolute;
   bottom: 0;
-  background: $main;
+  background: rgba($main, .98);
+}
+.page--description {
+  position: absolute;
+  right: 40px;
+  width: 80%;
+  height: 88%;
+  text-align: right;
+  h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-family: $serif;
+    font-style: italic;
+    padding-right: 5px;
+    span {
+      background: rgba($white, .8);
+    }
+  }
+  p {
+    font-family: $body;
+    line-height: 1.7;
+    padding-right: 5px;
+  }
+}
+
+.page--about-container {
+  width: 100%;
+  height: 100vh;
+  background: $white;
 }
