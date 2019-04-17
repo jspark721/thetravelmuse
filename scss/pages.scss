@@ -1,0 +1,20 @@
+@import 'variables';
+
+.page--header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page--header-top {
+  width: 100%;
+  height: 50%;
+}
+
+.page--header-bottom {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  background: $main;
+}
