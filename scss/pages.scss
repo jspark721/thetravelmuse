@@ -8,8 +8,8 @@
   font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 40px;
-  top: 5px;
+  left: 55px;
+  top: 12px;
   // text-shadow: 1px 1px 2px rgba($dark, .5);
 }
 .logo {
@@ -20,19 +20,18 @@
     color: $dark;
   }
 }
+.white {
+  color: $white;
+}
 
 .page--header {
   box-sizing: border-box;
   height: 110vh;
   width: 100%;
   box-sizing: border-box;
-  border: 40px solid $white;
+  border: 55px solid $white;
   background: $dark;
   position: relative;
-  .header--social {
-    right: 0;
-    top: 0;
-  }
 }
 .page--about-image {
   width: 100%;
@@ -46,17 +45,15 @@
 }
 
 .page--title {
-  text-align: right;
-  margin: -250px 55px 0 0;
+  margin: -180px 0 0 80px;
   color: $white;
   font-size: 4.5em;
   letter-spacing: 5px;
   text-shadow: 1px 1px 2px rgba($dark, .5);
 }
 .cursive-header {
-  text-align: right;
   font-family: $cursive;
-  margin: -70px 55px 0 0;
+  margin: -70px 0 0 80px;
   color: $white;
   font-size: 6em;
   font-weight: 100;
@@ -83,11 +80,6 @@
   }
   h3 {
     font-size: 1.3em;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    font-family: $serif;
-    font-style: italic;
-    padding-right: 5px;
     span {
       background: rgba($main, .8);
     }
@@ -247,30 +239,63 @@
 
 /* videos */
 .page--header-2 {
-  box-sizing: border-box;
-  height: 50vh;
+  height: 70vh;
   width: 100%;
-  border: 40px solid $white;
   position: relative;
   background-color: $main;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: none;
-  .header--social {
-    right: 0;
-    top: 0;
-  }
   .page--title {
     margin: 0;
   }
 }
 
 .videos-container {
-  box-sizing: border-box;
   width: 100%;
-  border: 40px solid $white;
-  border-top: none;
   background: $dark;
   height: 100vh;
+}
+
+/* services page */
+.overlay-blue {
+  height: 100%;
+  width: 100%;
+  background: darken(rgba($main, .85), 10%);
+}
+.page--services-container {
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .smcap {
+    color: $dark;
+    margin: 0 0 15px 0;
+  }
+  h2 {
+    color: $white;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+}
+.services--line {
+  width: 80px;
+  height: 5px;
+  background: $white;
+  margin: 30px 0;
+}
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+  font-size: .9em;
+  color: $white;
 }

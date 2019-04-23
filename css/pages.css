@@ -13,8 +13,8 @@
   font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 40px;
-  top: 5px; }
+  left: 55px;
+  top: 12px; }
 
 .logo {
   color: #A7C5D1;
@@ -23,17 +23,17 @@
     transition: all 0.3s ease;
     color: #333333; }
 
+.white {
+  color: #ffffff; }
+
 .page--header {
   box-sizing: border-box;
   height: 110vh;
   width: 100%;
   box-sizing: border-box;
-  border: 40px solid #ffffff;
+  border: 55px solid #ffffff;
   background: #333333;
   position: relative; }
-  .page--header .header--social {
-    right: 0;
-    top: 0; }
 
 .page--about-image {
   width: 100%;
@@ -46,17 +46,15 @@
   background-attachment: fixed; }
 
 .page--title {
-  text-align: right;
-  margin: -250px 55px 0 0;
+  margin: -180px 0 0 80px;
   color: #ffffff;
   font-size: 4.5em;
   letter-spacing: 5px;
   text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
 
 .cursive-header {
-  text-align: right;
   font-family: "Mansfield", cursive;
-  margin: -70px 55px 0 0;
+  margin: -70px 0 0 80px;
   color: #ffffff;
   font-size: 6em;
   font-weight: 100;
@@ -81,12 +79,7 @@
     z-index: 1;
     position: absolute; }
   .page--description h3 {
-    font-size: 1.3em;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    padding-right: 5px; }
+    font-size: 1.3em; }
     .page--description h3 span {
       background: rgba(167, 197, 209, 0.8); }
   .page--description p {
@@ -233,26 +226,56 @@
 
 /* videos */
 .page--header-2 {
-  box-sizing: border-box;
-  height: 50vh;
+  height: 70vh;
   width: 100%;
-  border: 40px solid #ffffff;
   position: relative;
   background-color: #A7C5D1;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: none; }
-  .page--header-2 .header--social {
-    right: 0;
-    top: 0; }
   .page--header-2 .page--title {
     margin: 0; }
 
 .videos-container {
-  box-sizing: border-box;
   width: 100%;
-  border: 40px solid #ffffff;
-  border-top: none;
   background: #333333;
   height: 100vh; }
+
+/* services page */
+.overlay-blue {
+  height: 100%;
+  width: 100%;
+  background: rgba(134, 175, 191, 0.85); }
+
+.page--services-container {
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .page--services-container .smcap {
+    color: #333333;
+    margin: 0 0 15px 0; }
+  .page--services-container h2 {
+    color: #ffffff;
+    margin: 0; }
+  .page--services-container h3 {
+    font-size: 1.7em; }
+
+.services--line {
+  width: 80px;
+  height: 5px;
+  background: #ffffff;
+  margin: 30px 0; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+  font-size: .9em;
+  color: #ffffff; }

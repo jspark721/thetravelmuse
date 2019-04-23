@@ -30,6 +30,14 @@ h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.7em; }
 
+h3 {
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  padding-right: 5px; }
+
 .uppercase-xsm {
   font-size: 0.7em;
   font-weight: 200;
@@ -46,6 +54,12 @@ h2 {
   font-size: 1.3em;
   font-weight: 700;
   line-height: 1.8em; }
+
+.smcap {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  color: #ffffff; }
 
 button {
   padding: 15px;
@@ -258,7 +272,7 @@ button {
   margin-top: 20px;
   margin-right: 6%;
   padding: 5px; }
-  .about--top-corner h3 {
+  .about--top-corner p {
     font-family: "Playfair Display", serif;
     letter-spacing: 0.2em;
     font-style: italic;
@@ -388,12 +402,6 @@ button {
     font-style: italic;
     font-weight: 100;
     font-size: 3.5em; }
-
-.work--smcap {
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 3px;
-  color: #ffffff; }
 
 .work--summary {
   color: #ffffff;
