@@ -23,8 +23,7 @@ p {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4em;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   text-transform: uppercase; }
 
 h2 {
@@ -179,7 +178,9 @@ button {
   margin-bottom: 90px; }
 
 .hero-title {
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 4em;
+  letter-spacing: 5px; }
 
 .hero--scroll {
   text-align: center;

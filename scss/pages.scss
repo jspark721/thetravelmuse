@@ -1,27 +1,31 @@
 @import 'variables';
 
 .travelmuse-logo {
-  font-family: $cursive;
-  font-size: 3.5em;
-  color: $white;
+  font-family: $bold;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 0.9em;
-  top: 0.4em;
-  text-shadow: 1px 1px 2px rgba($dark, .5);
+  left: 40px;
+  top: 5px;
+  // text-shadow: 1px 1px 2px rgba($dark, .5);
 }
 .logo {
-  color: $white;
+  color: $main;
   transition: $ease;
   &:hover {
-    font-size: 1.03em;
     transition: $ease;
+    color: $dark;
   }
 }
 
 .page--header {
+  box-sizing: border-box;
   height: 110vh;
-  width: 92%;
+  width: 100%;
+  box-sizing: border-box;
   border: 40px solid $white;
   position: relative;
   background-image: url('../img/header.jpg');
@@ -39,7 +43,7 @@
   margin-top: -63px;
   margin-bottom: 0;
   color: $white;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: right;
   text-shadow: 1px 1px 2px rgba($dark, .5);
 }
@@ -166,7 +170,6 @@
   .page--title {
     position: absolute;
     margin: 10px 0 0 100px;
-    font-size: 3em;
     text-align: left;
     z-index: 4;
     color:  $main;
@@ -225,4 +228,34 @@
   letter-spacing: 2px;
   margin-left: 50px;
   margin-top: 55px;
+}
+
+/* videos */
+.page--header-2 {
+  box-sizing: border-box;
+  height: 50vh;
+  width: 100%;
+  border: 40px solid $white;
+  position: relative;
+  background-color: $main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+  .header--social {
+    right: 0;
+    top: 0;
+  }
+  .page--title {
+    margin: 0;
+  }
+}
+
+.videos-container {
+  box-sizing: border-box;
+  width: 100%;
+  border: 40px solid $white;
+  border-top: none;
+  background: $dark;
+  height: 100vh;
 }

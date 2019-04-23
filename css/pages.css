@@ -6,25 +6,28 @@
   font-style: normal; }
 
 .travelmuse-logo {
-  font-family: "Mansfield", cursive;
-  font-size: 3.5em;
-  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 0.9em;
-  top: 0.4em;
-  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
+  left: 40px;
+  top: 5px; }
 
 .logo {
-  color: #ffffff;
+  color: #A7C5D1;
   transition: all 0.3s ease; }
   .logo:hover {
-    font-size: 1.03em;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    color: #333333; }
 
 .page--header {
+  box-sizing: border-box;
   height: 110vh;
-  width: 92%;
+  width: 100%;
+  box-sizing: border-box;
   border: 40px solid #ffffff;
   position: relative;
   background-image: url("../img/header.jpg");
@@ -40,7 +43,7 @@
   margin-top: -63px;
   margin-bottom: 0;
   color: #ffffff;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: right;
   text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
 
@@ -154,7 +157,6 @@
   .journey--bottom .page--title {
     position: absolute;
     margin: 10px 0 0 100px;
-    font-size: 3em;
     text-align: left;
     z-index: 4;
     color: #A7C5D1; }
@@ -212,3 +214,29 @@
   letter-spacing: 2px;
   margin-left: 50px;
   margin-top: 55px; }
+
+/* videos */
+.page--header-2 {
+  box-sizing: border-box;
+  height: 50vh;
+  width: 100%;
+  border: 40px solid #ffffff;
+  position: relative;
+  background-color: #A7C5D1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none; }
+  .page--header-2 .header--social {
+    right: 0;
+    top: 0; }
+  .page--header-2 .page--title {
+    margin: 0; }
+
+.videos-container {
+  box-sizing: border-box;
+  width: 100%;
+  border: 40px solid #ffffff;
+  border-top: none;
+  background: #333333;
+  height: 100vh; }
