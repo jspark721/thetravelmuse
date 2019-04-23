@@ -25,41 +25,56 @@
 
 .page--header {
   box-sizing: border-box;
-  height: 110vh;
+  height: 130vh;
   width: 100%;
   box-sizing: border-box;
   border: 40px solid #ffffff;
-  position: relative;
+  background: #333333;
+  position: relative; }
+  .page--header .header--social {
+    right: 0;
+    top: 0; }
+
+.page--about-image {
+  width: 100%;
+  height: 100%;
+  opacity: .6;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
-  .page--header .header--social {
-    right: 0;
-    top: 0; }
 
 .page--title {
-  margin-top: -63px;
-  margin-bottom: 0;
-  color: #ffffff;
-  font-size: 3em;
   text-align: right;
+  margin: -250px 55px 0 0;
+  color: #ffffff;
+  font-size: 4.5em;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
+
+.cursive-header {
+  text-align: right;
+  font-family: "Mansfield", cursive;
+  margin: -70px 55px 0 0;
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: 100;
   text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
 
 .page--header-bottom {
   width: 100%;
-  height: 35%;
+  height: 28%;
   position: absolute;
   bottom: 0;
   background: #ffffff; }
 
 .page--description {
   position: absolute;
-  right: 5px;
-  width: 80%;
-  height: 88%;
-  text-align: right; }
+  text-align: justify;
+  left: 50px;
+  top: 30px;
+  right: 50px; }
   .page--description h3 {
     font-size: 1.3em;
     font-weight: 300;
@@ -79,15 +94,13 @@
   width: 100%;
   height: 20vh;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background: #A7C5D1; }
   .page--about-short h2 {
-    text-align: right;
     margin: 70px;
     font-size: 1.7em;
-    padding-right: 5px;
-    padding-top: 30px; }
+    padding-left: 20px;
+    padding-top: 100px; }
 
 .page--about-journey {
   width: 100%;
@@ -108,9 +121,9 @@
 
 .about-journey-left {
   position: absolute;
-  margin-left: 80px;
+  margin-left: 60px;
+  margin-top: 30px;
   width: 45%;
-  height: 100%;
   padding: 30px; }
   .about-journey-left h2 {
     text-align: right;
@@ -141,7 +154,7 @@
   width: 40%;
   height: 100%;
   position: absolute;
-  right: 70px;
+  right: 95px;
   top: 5%;
   z-index: 1;
   background-image: url("../img/about-page.jpg");
@@ -156,10 +169,15 @@
   width: 100%; }
   .journey--bottom .page--title {
     position: absolute;
-    margin: 10px 0 0 100px;
-    text-align: left;
+    font-family: "Mansfield", cursive;
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0 0 0 95px;
     z-index: 4;
-    color: #A7C5D1; }
+    font-size: 4.7em;
+    color: #333333;
+    text-shadow: none;
+    font-weight: 500; }
 
 .journey--bottom-sm {
   width: 100%;
@@ -172,11 +190,11 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
-  width: 85%;
+  width: 87%;
   height: 50%;
   position: absolute;
   top: 17%;
-  left: 100px;
+  left: 70px;
   z-index: 2; }
 
 .journey-item {

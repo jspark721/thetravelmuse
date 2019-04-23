@@ -23,44 +23,58 @@
 
 .page--header {
   box-sizing: border-box;
-  height: 110vh;
+  height: 130vh;
   width: 100%;
   box-sizing: border-box;
   border: 40px solid $white;
+  background: $dark;
   position: relative;
-  background-image: url('../img/header.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   .header--social {
     right: 0;
     top: 0;
   }
 }
-
-.page--title {
-  margin-top: -63px;
-  margin-bottom: 0;
-  color: $white;
-  font-size: 3em;
-  text-align: right;
-  text-shadow: 1px 1px 2px rgba($dark, .5);
+.page--about-image {
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+.page--title {
+  text-align: right;
+  margin: -250px 55px 0 0;
+  color: $white;
+  font-size: 4.5em;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba($dark, .5);
+}
+.cursive-header {
+  text-align: right;
+  font-family: $cursive;
+  margin: -70px 55px 0 0;
+  color: $white;
+  font-size: 6em;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px rgba($dark, .5);
+}
 .page--header-bottom {
   width: 100%;
-  height: 35%;
+  height: 28%;
   position: absolute;
   bottom: 0;
   background: $white;
 }
 .page--description {
   position: absolute;
-  right: 5px;
-  width: 80%;
-  height: 88%;
-  text-align: right;
+  text-align: justify;
+  left: 50px;
+  top: 30px;
+  right: 50px;
   h3 {
     font-size: 1.3em;
     font-weight: 300;
@@ -84,15 +98,13 @@
   width: 100%;
   height: 20vh;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background: $main;
   h2 {
-    text-align: right;
     margin: 70px;
     font-size: 1.7em;
-    padding-right: 5px;
-    padding-top: 30px;
+    padding-left: 20px;
+    padding-top: 100px;
   }
 }
 .page--about-journey {
@@ -114,9 +126,9 @@
 }
 .about-journey-left {
   position: absolute;
-  margin-left: 80px;
+  margin-left: 60px;
+  margin-top: 30px;
   width: 45%;
-  height: 100%;
   padding: 30px;
   h2 {
     text-align: right;
@@ -151,7 +163,7 @@
   width: 40%;
   height: 100%;
   position: absolute;
-  right: 70px;
+  right: 95px;
   top: 5%;
   z-index: 1;
   background-image: url('../img/about-page.jpg');
@@ -169,10 +181,15 @@
   // background: $main;
   .page--title {
     position: absolute;
-    margin: 10px 0 0 100px;
-    text-align: left;
+    font-family: $cursive;
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0 0 0 95px;
     z-index: 4;
-    color:  $main;
+    font-size: 4.7em;
+    color: $dark;
+    text-shadow: none;
+    font-weight: 500;
   }
 }
 .journey--bottom-sm {
@@ -186,11 +203,11 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, minmax(200px,1fr));
-  width: 85%;
+  width: 87%;
   height: 50%;
   position: absolute;
   top: 17%;
-  left: 100px;
+  left: 70px;
   z-index: 2;
 }
 .journey-item {
