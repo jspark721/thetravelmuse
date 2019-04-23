@@ -334,3 +334,25 @@
   color: $white;
   font-family: $bold;
 }
+
+.cursive-contact {
+  font-family: $cursive;
+  text-align: center;
+  font-size: 5em;
+  margin: -70px 0 0 0;
+  color: $white;
+}
+
+.less-height {
+  height: 70vh;
+  .overlay {
+    height: 70vh;
+  }
+}
+
+.contact-form {
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  background: $white;
+}

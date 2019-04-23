@@ -310,3 +310,21 @@
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Oswald", sans-serif; }
+
+.cursive-contact {
+  font-family: "Mansfield", cursive;
+  text-align: center;
+  font-size: 5em;
+  margin: -70px 0 0 0;
+  color: #ffffff; }
+
+.less-height {
+  height: 70vh; }
+  .less-height .overlay {
+    height: 70vh; }
+
+.contact-form {
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  background: #ffffff; }
