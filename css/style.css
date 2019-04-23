@@ -84,6 +84,12 @@ button {
   .btn-inverse:hover {
     background: #A7C5D1; }
 
+.hover-white {
+  transition: all 0.3s ease; }
+  .hover-white:hover {
+    background: #ffffff;
+    transition: all 0.4s ease-out; }
+
 .sticky {
   position: fixed;
   z-index: 10; }

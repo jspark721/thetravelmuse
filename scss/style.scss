@@ -94,6 +94,13 @@ button {
     background: $main;
   }
 }
+.hover-white {
+  transition: $ease;
+  &:hover {
+    background: $white;
+    transition: $ease-slow;
+  }
+}
 
 //front-page header section -------------
 .sticky {
