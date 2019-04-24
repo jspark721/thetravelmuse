@@ -493,6 +493,16 @@ button {
   width: 100%;
   background: rgba($dark, .4);
 }
+.overlay-blue {
+  height: 100%;
+  width: 100%;
+  background: rgba($main, .85);
+}
+.overlay-white {
+  height: 100%;
+  width: 100%;
+  background: rgba($white, .15);
+}
 
 .services--container {
   position: relative;

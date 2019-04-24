@@ -13,8 +13,8 @@
   font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 55px;
-  top: 12px; }
+  left: 45px;
+  top: 25px; }
 
 .logo {
   color: #A7C5D1;
@@ -26,14 +26,32 @@
 .white {
   color: #ffffff; }
 
+.dark {
+  color: #333333; }
+  .dark:hover {
+    color: #A7C5D1; }
+
 .page--header {
-  box-sizing: border-box;
-  height: 110vh;
+  height: 80vh;
   width: 100%;
-  box-sizing: border-box;
-  border: 55px solid #ffffff;
-  background: #333333;
   position: relative; }
+  .page--header .header--social i {
+    color: #333333; }
+
+.page--header-left, .page--header-right {
+  position: absolute;
+  width: 50%;
+  height: 100%; }
+
+.page--header-left {
+  background-image: url("../img/about-page.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover; }
+
+.page--header-right {
+  right: 0;
+  background: #ffffff; }
 
 .page--about-image {
   width: 100%;
@@ -44,54 +62,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
-
-.page--title {
-  margin: -180px 0 0 80px;
-  color: #ffffff;
-  font-size: 4.5em;
-  letter-spacing: 5px;
-  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
-
-.cursive-header {
-  font-family: "Mansfield", cursive;
-  margin: -70px 0 0 80px;
-  color: #ffffff;
-  font-size: 6em;
-  font-weight: 100;
-  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5); }
-
-.page--header-bottom {
-  width: 100%;
-  height: 25%;
-  position: absolute;
-  bottom: 0;
-  background: #ffffff; }
-
-.page--description {
-  position: absolute;
-  text-align: justify;
-  left: 80px;
-  top: 30px;
-  right: 70px; }
-  .page--description h2 {
-    font-size: 1.7em;
-    margin-top: 50px;
-    z-index: 1;
-    position: absolute; }
-  .page--description h3 {
-    font-size: 1.3em; }
-    .page--description h3 span {
-      background: rgba(167, 197, 209, 0.8); }
-  .page--description p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.8em;
-    line-height: 1.7;
-    padding-right: 5px; }
-
-.page--about-short {
-  width: 100%;
-  height: 20vh;
-  background: #A7C5D1; }
 
 .page--about-journey {
   width: 100%;
@@ -243,11 +213,6 @@
   height: 100vh; }
 
 /* services page */
-.overlay-blue {
-  height: 100%;
-  width: 100%;
-  background: rgba(167, 197, 209, 0.85); }
-
 .page--services-container {
   left: 10%;
   width: 80%;

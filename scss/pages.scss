@@ -8,8 +8,8 @@
   font-weight: 900;
   position: absolute;
   z-index: 2;
-  left: 55px;
-  top: 12px;
+  left: 45px;
+  top: 25px;
   // text-shadow: 1px 1px 2px rgba($dark, .5);
 }
 .logo {
@@ -23,16 +23,38 @@
 .white {
   color: $white;
 }
-
-.page--header {
-  box-sizing: border-box;
-  height: 110vh;
-  width: 100%;
-  box-sizing: border-box;
-  border: 55px solid $white;
-  background: $dark;
-  position: relative;
+.dark {
+  color: $dark;
+  &:hover {
+    color: $main;
+  }
 }
+.page--header {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  .header--social {
+    i {
+      color: $dark;
+    }
+  }
+}
+.page--header-left, .page--header-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.page--header-left {
+  background-image: url('../img/about-page.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.page--header-right {
+  right: 0;
+  background: $white;
+}
+
 .page--about-image {
   width: 100%;
   height: 100%;
@@ -44,59 +66,58 @@
   background-attachment: fixed;
 }
 
-.page--title {
-  margin: -180px 0 0 80px;
-  color: $white;
-  font-size: 4.5em;
-  letter-spacing: 5px;
-  text-shadow: 1px 1px 2px rgba($dark, .5);
-}
-.cursive-header {
-  font-family: $cursive;
-  margin: -70px 0 0 80px;
-  color: $white;
-  font-size: 6em;
-  font-weight: 100;
-  text-shadow: 1px 1px 2px rgba($dark, .5);
-}
-.page--header-bottom {
-  width: 100%;
-  height: 25%;
-  position: absolute;
-  bottom: 0;
-  background: $white;
-}
-.page--description {
-  position: absolute;
-  text-align: justify;
-  left: 80px;
-  top: 30px;
-  right: 70px;
-  h2 {
-    font-size: 1.7em;
-    margin-top: 50px;
-    z-index: 1;
-    position: absolute;
-  }
-  h3 {
-    font-size: 1.3em;
-    span {
-      background: rgba($main, .8);
-    }
-  }
-  p {
-    font-family: $body;
-    font-size: 0.8em;
-    line-height: 1.7;
-    padding-right: 5px;
-  }
-}
-
-.page--about-short {
-  width: 100%;
-  height: 20vh;
-  background: $main;
-}
+// .page--title {
+//   color: $white;
+//   font-size: 3em;
+//   letter-spacing: 5px;
+//   text-shadow: 1px 1px 2px rgba($dark, .5);
+// }
+// .cursive-header {
+//   font-family: $cursive;
+//   margin: -70px 0 0 80px;
+//   color: $white;
+//   font-size: 6em;
+//   font-weight: 100;
+//   text-shadow: 1px 1px 2px rgba($dark, .5);
+// }
+// .page--header-bottom {
+//   width: 100%;
+//   height: 25%;
+//   position: absolute;
+//   bottom: 0;
+//   background: $white;
+// }
+// .page--description {
+//   position: absolute;
+//   text-align: justify;
+//   left: 80px;
+//   top: 30px;
+//   right: 70px;
+//   h2 {
+//     font-size: 1.7em;
+//     margin-top: 50px;
+//     z-index: 1;
+//     position: absolute;
+//   }
+//   h3 {
+//     font-size: 1.3em;
+//     span {
+//       background: rgba($main, .8);
+//     }
+//   }
+//   p {
+//     font-family: $body;
+//     font-size: 0.8em;
+//     line-height: 1.7;
+//     padding-right: 5px;
+//   }
+// }
+//
+// .page--about-short {
+//   width: 100%;
+//   height: 20vh;
+//   background: $main;
+// }
 .page--about-journey {
   width: 100%;
   min-height: 150vh;
@@ -259,11 +280,6 @@
 }
 
 /* services page */
-.overlay-blue {
-  height: 100%;
-  width: 100%;
-  background: rgba($main, .85);
-}
 .page--services-container {
   left: 10%;
   width: 80%;
