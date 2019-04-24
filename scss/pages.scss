@@ -66,12 +66,12 @@
   background-attachment: fixed;
 }
 
-// .page--title {
-//   color: $white;
-//   font-size: 3em;
-//   letter-spacing: 5px;
-//   text-shadow: 1px 1px 2px rgba($dark, .5);
-// }
+.page--title {
+  color: $white;
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba($dark, .5);
+}
 // .cursive-header {
 //   font-family: $cursive;
 //   margin: -70px 0 0 80px;
@@ -259,23 +259,42 @@
 }
 
 /* videos */
-.page--header-2 {
-  height: 70vh;
+.overlay-absolute {
   width: 100%;
-  position: relative;
-  background-color: $main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: none;
-  .page--title {
-    margin: 0;
+  height: 70%;
+  position: absolute;
+  background: rgba($dark, .75);
+}
+.videos-header {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  a {
+    z-index: 2;
+  }
+  .contact--desc {
+    h2 {
+      color: $main;
+    }
+    .caps {
+      color: $white;
+      a {
+        color: $main;
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
   }
 }
 
 .videos-container {
   width: 100%;
-  background: $dark;
+  background: $main;
   height: 100vh;
 }
 
@@ -307,6 +326,7 @@
   height: 5px;
   background: $white;
   margin: 30px 0;
+  z-index: 2;
 }
 .caps {
   text-transform: uppercase;
@@ -314,11 +334,20 @@
   margin-bottom: 70px;
   font-size: .9em;
   color: $white;
+  a {
+    color: $dark;
+    font-weight: 600;
+    transition: $ease;
+    &:hover {
+      background: $white;
+      transition: $ease;
+    }
+  }
 }
 
 /* contact page */
 .page--contact {
-  background: $main;
+  background-color: $main;
   width: 100%;
   height: 70vh;
   display: flex;
@@ -330,6 +359,7 @@
 .contact--desc {
   width: 70%;
   text-align: center;
+  z-index: 2;
   h2 {
     font-size: 3em;
     color: $white;
@@ -349,6 +379,7 @@
   text-transform: uppercase;
   color: $white;
   font-family: $bold;
+  margin-top: 30px;
 }
 
 .cursive-contact {
