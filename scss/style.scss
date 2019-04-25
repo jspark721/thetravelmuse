@@ -86,6 +86,14 @@ button {
     transform: scale(1.03);
   }
 }
+.btn-blue{
+  background: $main;
+  color: $dark;
+  &:hover {
+    background: $dark;
+    color: $white;
+  }
+}
 .btn-inverse {
   background: $white;
   color: $dark;
@@ -188,7 +196,7 @@ button {
 
 .header--social {
   position: absolute;
-  right: 25px;
+  right: 2%;
   top: 10%;
   z-index: 2;
   display: flex;
