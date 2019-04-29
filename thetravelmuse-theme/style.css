@@ -302,8 +302,10 @@ button {
 
 .about--bio {
   letter-spacing: 0.03em;
-  font-size: 0.8em;
-  line-height: 1.7em; }
+  font-size: 1.8em;
+  line-height: 1.7em;
+  font-family: "Playfair Display", serif;
+  font-style: italic; }
 
 .about--btn {
   margin-top: 15%;

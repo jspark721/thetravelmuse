@@ -29,10 +29,11 @@
       <div class="about--title-line"></div>
       <div class="about--desc">
         <div class="about--bio">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-        the_content();
-        endwhile; else: ?>
-        <?php endif; ?>
+          <?php
+            $my_postid = 1;
+            $content = get_post($my_postid)->post_content;
+            echo $content;
+          ?>
         </div>
       </div>
       <button class="about--btn">learn more about me <i class="fas fa-angle-double-right"></i></button>
@@ -63,7 +64,6 @@
       <iframe width="100%" height="350" src="https://www.youtube.com/embed/cJ6uoyPAMKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
-  <!-- <div class="arrow--right"><i class="fas fa-angle-right"></i></div> -->
   <div class="films--btn"><button class="btn-inverse">more videos <i class="fas fa-angle-double-right"></i></button></div>
 
 </section>
@@ -73,8 +73,8 @@
     <h2>the travel muse</h2>
     <div class="work--summary">
       <?php
-        $my_postid = 1752;
-        $content = get_post(1752)->post_content;
+        $my_postid = 11;
+        $content = get_post($my_postid)->post_content;
         echo $content;
       ?>
     </div>
