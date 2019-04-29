@@ -150,6 +150,7 @@ button {
   background: $white;
   transition: $ease-slow;
   opacity: 1;
+  box-shadow: 1px 1px 5px rgba($dark, .1);
 }
 
 .nav--open-icon {
