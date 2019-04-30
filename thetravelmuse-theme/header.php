@@ -25,16 +25,16 @@
       <div class="nav--open-title">explore</div>
       <div class="nav--open-menu">
         <a href="/about">about</a>
-        <a href="">videos</a>
-        <a href="">work</a>
-        <a href="">services</a>
-        <a href="">contact</a>
+        <a href="/videos">videos</a>
+        <a href="/work">work</a>
+        <a href="/services">services</a>
+        <a href="/contact">contact</a>
       </div>
     </div>
 
     <div class="header--social">
-      <a href=""><i class="fab fa-youtube"></i></a>
-      <a href=""><i class="fab fa-instagram" style="font-size: 1.3em"></i></a>
+      <a href="https://www.youtube.com/user/NathalieTravelMuse"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/thetravelmuse/" alt="Instagram"><i class="fab fa-instagram" style="font-size: 1.3em"></i></a>
       <a href=""><i class="fab fa-twitter"></i></a>
       <a href=""><i class="fab fa-facebook"></i></a>
       <a href=""><i class="far fa-envelope"></i></a>

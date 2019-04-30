@@ -22,19 +22,17 @@
   </div>
   <div class="about--right">
     <div class="about--top-corner">
-      <h3>travel, journalism, lifestyle</h3>
+      <p>travel, journalism, lifestyle</p>
     </div>
     <div class="about--title">
       <h2>This is Nathalie.</h2>
       <div class="about--title-line"></div>
       <div class="about--desc">
-        <div class="about--bio">
-          <?php
-            $my_postid = 1;
-            $content = get_post($my_postid)->post_content;
-            echo $content;
-          ?>
-        </div>
+        <?php
+          $my_postid = 1;
+          $content = get_post($my_postid)->post_content;
+          echo $content;
+        ?>
       </div>
       <button class="about--btn">learn more about me <i class="fas fa-angle-double-right"></i></button>
     </div>
@@ -69,7 +67,7 @@
 </section>
 <section class="work--container">
   <div class="work--title">
-    <p class="work--smcap">my work</p>
+    <p class="smcap">my work</p>
     <h2>the travel muse</h2>
     <div class="work--summary">
       <?php
@@ -119,7 +117,11 @@
     <h2 class="cursive">work with me</h2>
   </div>
   <div class="contact--box">
-    <p class="contact--text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+    <?php
+      $my_postid = 15;
+      $content = get_post($my_postid)->post_content;
+      echo $content;
+    ?>
     <div class="contact--line"></div>
     <button class="btn-inverse">get in touch</button>
   </div>

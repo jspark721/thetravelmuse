@@ -1,11 +1,3 @@
-/*
-Theme Name: The Travel Muse
-Author: Julie Park
-Description: Website design + development for The Travel Muse by Julie Park
-Version: 1.0.0
-*/
-
-/* variables */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Oswald:200,400|Playfair+Display:400,400i");
 @font-face {
   font-family: 'Mansfield';
@@ -13,7 +5,7 @@ Version: 1.0.0
   font-weight: normal;
   font-style: normal; }
 
-/*styles*/
+/* homepage & navigation styles */
 body {
   margin: 0;
   overflow-x: hidden; }
@@ -31,13 +23,19 @@ p {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4em;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   text-transform: uppercase; }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.7em; }
+
+h3 {
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+  padding-right: 5px; }
 
 .uppercase-xsm {
   font-size: 0.7em;
@@ -56,6 +54,12 @@ h2 {
   font-weight: 700;
   line-height: 1.8em; }
 
+.smcap {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  color: #ffffff; }
+
 button {
   padding: 15px;
   background: #333333;
@@ -73,11 +77,24 @@ button {
     transition: all 0.3s ease;
     transform: scale(1.03); }
 
+.btn-blue {
+  background: #A7C5D1;
+  color: #333333; }
+  .btn-blue:hover {
+    background: #333333;
+    color: #ffffff; }
+
 .btn-inverse {
   background: #ffffff;
   color: #333333; }
   .btn-inverse:hover {
     background: #A7C5D1; }
+
+.hover-white {
+  transition: all 0.3s ease; }
+  .hover-white:hover {
+    background: #ffffff;
+    transition: all 0.4s ease-out; }
 
 .sticky {
   position: fixed;
@@ -113,7 +130,8 @@ button {
   width: 300px;
   background: #ffffff;
   transition: all 0.4s ease-out;
-  opacity: 1; }
+  opacity: 1;
+  box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.1); }
 
 .nav--open-icon {
   text-align: right;
@@ -152,8 +170,9 @@ button {
 
 .header--social {
   position: absolute;
-  right: 25px;
+  right: 2%;
   top: 10%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
@@ -186,7 +205,9 @@ button {
   margin-bottom: 90px; }
 
 .hero-title {
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 4em;
+  letter-spacing: 5px; }
 
 .hero--scroll {
   text-align: center;
@@ -264,7 +285,7 @@ button {
   margin-top: 20px;
   margin-right: 6%;
   padding: 5px; }
-  .about--top-corner h3 {
+  .about--top-corner p {
     font-family: "Playfair Display", serif;
     letter-spacing: 0.2em;
     font-style: italic;
@@ -288,27 +309,27 @@ button {
 .about--title-line {
   position: absolute;
   background: #A7C5D1;
-  width: 180px;
+  width: 350px;
   height: 8px;
-  top: 95px;
-  left: 160px; }
+  top: 120px;
+  left: 80px; }
 
 .about--desc {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 5%;
-  margin-left: 25%;
-  margin-right: 8%;
-  text-align: justify; }
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-right: 10%;
+  background: #ffffff;
+  padding: 0px 3px 0px 10px; }
 
-.about--bio {
+.about--desc p {
+  font-family: "Playfair Display", serif;
   letter-spacing: 0.03em;
   font-size: 1.8em;
   line-height: 1.7em;
-  font-family: "Playfair Display", serif;
   font-style: italic; }
 
 .about--btn {
-  margin-top: 15%;
+  margin-top: 12%;
   margin-left: 9px;
   box-shadow: 9px 9px 0px #a7c5d1; }
   .about--btn:hover {
@@ -395,12 +416,6 @@ button {
     font-weight: 100;
     font-size: 3.5em; }
 
-.work--smcap {
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 3px;
-  color: #ffffff; }
-
 .work--summary {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
@@ -414,6 +429,16 @@ button {
   width: 100%;
   background: rgba(51, 51, 51, 0.4); }
 
+.overlay-blue {
+  height: 100%;
+  width: 100%;
+  background: rgba(167, 197, 209, 0.85); }
+
+.overlay-white {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15); }
+
 .services--container {
   position: relative;
   height: 80vh;
@@ -421,7 +446,7 @@ button {
   .services--container .number--box {
     border-color: #ffffff;
     position: absolute;
-    left: 48%;
+    left: 47%;
     top: -50px; }
     .services--container .number--box .number--box-line {
       position: absolute;
@@ -503,6 +528,13 @@ button {
   text-align: center; }
   .contact--box button {
     margin-top: 20px; }
+  .contact--box p {
+    padding: 70px;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .7em; }
 
 .contact--title {
   position: absolute;
@@ -515,14 +547,6 @@ button {
     font-size: 7.5em;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.8); }
-
-.contact--text {
-  padding: 70px;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: .7em; }
 
 .contact--line {
   position: absolute;
@@ -564,213 +588,6 @@ footer {
     .footer--text a:hover {
       background: #A7C5D1;
       color: #333333; }
-
-/*sub pages header */
-.header-top {
-  width: 100%;
-  background: #ffffff;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.logo {
-  font-family: "Mansfield", cursive;
-  font-size: 4em;
-  margin: 0;
-  font-weight: 100;
-  transition: all 0.3s ease; }
-  .logo:hover {
-    color: #333333;
-    transition: all 0.3s ease; }
-
-.social-icons-sm {
-  margin-right: 10px;
-  display: grid;
-  width: 50px;
-  height: 50px;
-  grid-template-columns: 1fr 1fr; }
-
-/* about page */
-.about-page-main {
-  width: 100%;
-  height: 70vh;
-  margin-bottom: 90px; }
-
-.about-page-hero-img {
-  position: relative;
-  margin-left: 5%;
-  width: 90%;
-  height: 100%;
-  background: url("../img/header.jpg") no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.about-page-title {
-  position: absolute;
-  right: -15px;
-  bottom: 0;
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 4em;
-  font-weight: 800;
-  color: #ffffff;
-  opacity: .8;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg); }
-
-.about-page-intro {
-  background: #ffffff;
-  position: relative;
-  height: 85vh; }
-
-.about-intro-title {
-  position: absolute;
-  width: 80%;
-  height: 50px;
-  left: 140px;
-  top: 60px;
-  display: flex;
-  float: left; }
-
-.intro-title {
-  font-size: 2em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #A7C5D1;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  white-space: nowrap; }
-
-.about-intro-line {
-  align-self: center;
-  margin-left: 5%;
-  width: 60%;
-  height: 2px;
-  background: #A7C5D1; }
-
-.about-intro-desc {
-  position: absolute;
-  width: 80%;
-  height: 50%;
-  left: 140px;
-  top: 170px; }
-  .about-intro-desc .large-ptext {
-    margin-top: -40px;
-    text-align: justify; }
-
-.right-side {
-  width: 50%;
-  margin-left: 50%;
-  padding-top: 5%; }
-
-.about-intro-img {
-  position: absolute;
-  z-index: 3;
-  top: 440px;
-  left: 100px;
-  width: 480px;
-  height: 580px;
-  overflow: hidden; }
-  .about-intro-img img {
-    width: 100%; }
-
-.about-page-journey {
-  height: 120vh;
-  background: #A7C5D1;
-  position: relative; }
-
-.about-journey-desc {
-  position: absolute;
-  top: -120px;
-  width: 45%;
-  right: 3%; }
-  .about-journey-desc .intro-title {
-    white-space: normal; }
-
-.about-journey-vertical-line {
-  background: #333333;
-  width: 2px;
-  height: 120px;
-  margin-left: 30px;
-  margin-top: 10px; }
-
-.about-journey-desc-textbox {
-  position: absolute;
-  width: 480px;
-  z-index: 2; }
-  .about-journey-desc-textbox p {
-    margin: 5px;
-    font-size: 2em;
-    line-height: 1.7em;
-    font-style: italic;
-    text-align: justify; }
-
-.about-journey-bottom {
-  width: 100%;
-  height: 60%;
-  position: absolute;
-  bottom: 0; }
-  .about-journey-bottom .intro-title {
-    color: #ffffff; }
-  .about-journey-bottom .about-intro-line {
-    background: #ffffff; }
-
-.about-journey-center-box {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
-  width: 85%;
-  height: 50%;
-  position: absolute;
-  top: 27%;
-  left: 100px; }
-
-.journey-item {
-  background: #333333;
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-  transition: all 0.3s ease; }
-
-.journey-img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: .7; }
-
-.journey-item-city {
-  position: absolute;
-  top: 40%;
-  font-family: "Mansfield", cursive;
-  color: #c8dbe3;
-  margin: 0 30px;
-  text-transform: lowercase;
-  font-size: 3.3em;
-  letter-spacing: 0; }
-
-.journey-item-country {
-  position: absolute;
-  top: 40%;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 50px;
-  margin-top: 55px; }
-
-  .vimeography-theme-harvestone {
-    max-width: 1000px;
-  }
-  .swiper-button-prev .swiper-button-next {
-    color: #aeee34;
-  }
 
 /*animations */
 @keyframes bounce {
