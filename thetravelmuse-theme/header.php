@@ -27,6 +27,7 @@
       <div class="nav--open-icon"><i class="fas fa-times"></i></div>
       <div class="nav--open-title">explore</div>
       <div class="nav--open-menu">
+        <a href="/">home</a>
         <a href="/about">about</a>
         <a href="/videos">videos</a>
         <a href="/services">services</a>
