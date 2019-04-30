@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'pages.scss';
 
 /* homepage & navigation styles */
 
@@ -729,6 +730,9 @@ $xsmall: 450px;
     width: 100%;
     left: 0;
   }
+  .page--header {
+    height: 120vh;
+  }
 }
 
 @media only screen and (max-width: $medium) {
@@ -746,6 +750,12 @@ $xsmall: 450px;
   .contact--box {
     width: 65%;
     left: 17.5%;
+  }
+  .page--header-right {
+    width: 65%;
+  }
+  .page--header-left {
+    width: 35%;
   }
 }
 @media only screen and (max-width: 725px) {

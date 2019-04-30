@@ -45,12 +45,12 @@
   height: 100%;
 }
 .page--header-left {
+  width: 45%;
   background-image: url('../img/about-page.jpg');
   background-repeat: no-repeat;
-  background-position: left;
   background-size: contain;
   background-attachment: fixed;
-  width: 45%;
+  background-position: top left;
 }
 .page--header-right {
   width: 55%;
