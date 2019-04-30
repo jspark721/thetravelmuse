@@ -151,17 +151,22 @@ button {
   text-align: center;
   margin-top: 35%; }
 
-.nav--open-menu {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 30px; }
-  .nav--open-menu a {
-    font-size: 2em;
-    font-weight: 100;
-    font-family: "Playfair Display", serif;
-    padding: 15px 0; }
+  .nav--open-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px; }
+    .nav--open-menu a {
+      font-size: 2em;
+      font-weight: 100;
+      font-family: "Playfair Display", serif;
+      padding: 15px 0;
+      transition: all 0.3s ease; }
+      .nav--open-menu a:hover {
+        background: #A7C5D1;
+        color: #ffffff;
+        transition: all 0.3s ease; }
 
 .close {
   transform: translateX(-300px);

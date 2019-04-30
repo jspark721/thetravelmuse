@@ -186,6 +186,12 @@ button {
     font-weight: 100;
     font-family: $serif;
     padding: 15px 0;
+    transition: $ease;
+    &:hover {
+      background: $main;
+      color: $white;
+      transition: $ease;
+    }
   }
 }
 

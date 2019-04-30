@@ -161,7 +161,12 @@ button {
     font-size: 2em;
     font-weight: 100;
     font-family: "Playfair Display", serif;
-    padding: 15px 0; }
+    padding: 15px 0;
+    transition: all 0.3s ease; }
+    .nav--open-menu a:hover {
+      background: #A7C5D1;
+      color: #ffffff;
+      transition: all 0.3s ease; }
 
 .close {
   transform: translateX(-300px);
