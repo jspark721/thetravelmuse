@@ -1,3 +1,6 @@
+<?php
+/* main header template*/
+?>
 <!DOCTYPE html>
 <html>
 
