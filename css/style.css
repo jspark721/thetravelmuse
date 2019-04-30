@@ -471,7 +471,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
-  height: 100%;
+  height: 70%;
   margin: 0 8%; }
 
 .services--item {
@@ -503,6 +503,16 @@ button {
   width: 100%;
   object-fit: cover;
   transition: all 0.3s ease; }
+
+.services--button {
+  position: absolute;
+  width: 15%;
+  left: 42.5%;
+  display: flex;
+  justify-content: center; }
+  .services--button button:hover {
+    background: #333333;
+    color: #ffffff; }
 
 .img-overlay {
   position: absolute;
