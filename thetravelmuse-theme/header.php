@@ -29,7 +29,6 @@
       <div class="nav--open-menu">
         <a href="/about">about</a>
         <a href="/videos">videos</a>
-        <a href="/work">work</a>
         <a href="/services">services</a>
         <a href="/contact">contact</a>
       </div>
