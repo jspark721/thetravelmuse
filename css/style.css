@@ -916,15 +916,27 @@ footer {
     width: 65%;
     left: 17.5%; }
   .page--header-right {
-    width: 65%; }
+    width: 60%; }
   .page--header-left {
-    width: 35%;
-    background-image: url("../img/about-page-narrow.jpg"); } }
+    width: 40%;
+    background-image: url("../img/about-page-narrow.jpg"); }
+  .page--about-journey {
+    height: 85vh;
+    min-height: 700px; }
+  .journey--container .page--title {
+    margin-top: -200px;
+    font-size: 4em; }
+  .about-journey-center-box {
+    margin-top: 18%;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); } }
 
 @media only screen and (max-width: 725px) {
   .about--title-line {
     width: 280px;
-    top: 170px; } }
+    top: 170px; }
+  .journey--container .page--title {
+    margin-top: -200px;
+    font-size: 3.5em; } }
 
 @media only screen and (max-width: 600px) {
   .number--box {
@@ -985,8 +997,39 @@ footer {
     font-size: 5.5em; }
   .contact--box p {
     padding: 45px; }
+  .page--header {
+    height: 100vh; }
+  .page--header-left {
+    width: 100%;
+    background-image: url("../img/about-page.jpg");
+    background-size: cover; }
+  .page--header-right {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); }
+  .page-about--description {
+    left: 90px; }
+  .journey--container .page--title {
+    margin-top: -210px;
+    font-size: 3em; }
   .footer--bottom {
     padding: 10px; } }
+
+@media only screen and (max-width: 570px) {
+  .page--header {
+    min-height: 1200px; }
+  .page--about-journey {
+    height: 140vh; }
+  .about-journey-center-box {
+    margin-top: 18%;
+    grid-gap: 0;
+    grid-template-columns: 1fr; }
+  .journey--container .page--title {
+    margin-top: -470px;
+    font-size: 3em;
+    text-align: center; }
+  .journey-img {
+    height: auto;
+    width: 100%; } }
 
 @media only screen and (max-width: 450px) {
   .films--container {
@@ -998,4 +1041,12 @@ footer {
     width: 90%;
     margin-left: 5%; }
   .contact--title h2 {
-    font-size: 4.5em; } }
+    font-size: 4.5em; }
+  .page--header {
+    min-height: 1300px; }
+  .page-about--description {
+    text-align: left; }
+  .page--about-journey {
+    height: 150vh; }
+  .journey-item {
+    height: 230px; } }
