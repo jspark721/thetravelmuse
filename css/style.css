@@ -1032,6 +1032,8 @@ footer {
     width: 100%; } }
 
 @media only screen and (max-width: 450px) {
+  .hero--container {
+    height: 130vh; }
   .films--container {
     height: 140vh;
     padding-bottom: 15em; }
@@ -1049,4 +1051,6 @@ footer {
   .page--about-journey {
     height: 150vh; }
   .journey-item {
-    height: 230px; } }
+    height: 230px; }
+  .page--services-container {
+    top: 15%; } }
