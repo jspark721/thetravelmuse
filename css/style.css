@@ -224,6 +224,12 @@
     margin: 0; }
   .page--services-container h3 {
     font-size: 1.7em; }
+  .page--services-container p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    font-size: .9em;
+    color: #ffffff; }
 
 .services--line {
   width: 80px;

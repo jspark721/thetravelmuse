@@ -243,6 +243,13 @@
   h3 {
     font-size: 1.7em;
   }
+  p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    font-size: .9em;
+    color: $white;
+  }
 }
 .services--line {
   width: 80px;
