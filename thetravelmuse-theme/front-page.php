@@ -34,7 +34,7 @@
           echo $content;
         ?>
       </div>
-      <button class="about--btn">learn more about me <i class="fas fa-angle-double-right"></i></button>
+      <button class="about--btn">learn more <i class="fas fa-angle-double-right"></i></button>
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@
 </section>
 <section class="work--container">
   <div class="work--title">
-    <p class="smcap">my work</p>
+    <p class="smcap">work</p>
     <h2>the travel muse</h2>
     <div class="work--summary">
       <?php
@@ -109,12 +109,13 @@
       </div>
     </a>
   </div>
+  <div class="services--button"><button class="btn-inverse">view services</button></div>
 </section>
 
 
 <section class="contact--container">
   <div class="contact--title">
-    <h2 class="cursive">work with me</h2>
+    <h2 class="cursive">work together</h2>
   </div>
   <div class="contact--box">
     <?php
