@@ -209,6 +209,14 @@
   width: 100%;
   background: $main;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vimeography-theme-harvestone {
+  max-width: 1000px;
 }
 
 /* services page */
@@ -242,11 +250,13 @@
   z-index: 2;
 }
 .caps {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 70px;
-  font-size: .9em;
-  color: $white;
+  p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    font-size: .9em;
+    color: $white;
+  }
   a {
     color: $dark;
     font-weight: 600;

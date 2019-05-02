@@ -1,8 +1,298 @@
 @font-face {
   font-family: 'Mansfield';
-  src: url("css/webfont/Mansfield.eot?#iefix") format("embedded-opentype"), url("css/webfont/Mansfield.otf") format("opentype"), url("css/webfont/Mansfield.woff") format("woff"), url("css/webfont/Mansfield.ttf") format("truetype"), url("css/webfont/Mansfield.svg#Mansfield") format("svg");
+  src: url("/css/webfont/Mansfield.eot?#iefix") format("embedded-opentype"), url("/css/webfont/Mansfield.otf") format("opentype"), url("/css/webfont/Mansfield.woff") format("woff"), url("/css/webfont/Mansfield.ttf") format("truetype"), url("/css/webfont/Mansfield.svg#Mansfield") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Mansfield';
+  src: url("/css/webfont/Mansfield.eot?#iefix") format("embedded-opentype"), url("/css/webfont/Mansfield.otf") format("opentype"), url("/css/webfont/Mansfield.woff") format("woff"), url("/css/webfont/Mansfield.ttf") format("truetype"), url("/css/webfont/Mansfield.svg#Mansfield") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.travelmuse-logo {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: 900;
+  position: absolute;
+  z-index: 2;
+  left: 45px;
+  top: 25px; }
+
+.logo {
+  color: #A7C5D1;
+  transition: all 0.3s ease; }
+  .logo:hover {
+    transition: all 0.3s ease;
+    color: #333333; }
+
+.white {
+  color: #ffffff; }
+
+.dark {
+  color: #333333; }
+  .dark:hover {
+    color: #A7C5D1; }
+
+.page--header {
+  height: 100vh;
+  min-height: 950px;
+  width: 100%;
+  position: relative; }
+  .page--header .header--social i {
+    color: #333333; }
+
+.page--header-left, .page--header-right {
+  position: absolute;
+  height: 100%; }
+
+.page--header-left {
+  width: 45%;
+  background-image: url("img/about-page.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: top left; }
+
+.page--header-right {
+  width: 55%;
+  right: 0;
+  background: #ffffff; }
+
+.page-about--description {
+  position: absolute;
+  text-align: justify;
+  left: 10%;
+  top: 5%;
+  right: 15%;
+  max-width: 550px; }
+  .page-about--description h1 {
+    font-size: 2.8em;
+    letter-spacing: 7px;
+    font-family: "Oswald", sans-serif; }
+  .page-about--description h2 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px; }
+  .page-about--description h3 {
+    font-style: italic;
+    font-size: 1.3em;
+    margin-bottom: 35px; }
+    .page-about--description h3 span {
+      background: rgba(167, 197, 209, 0.8); }
+  .page-about--description p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    line-height: 1.7;
+    padding-right: 5px; }
+
+.highlight-line {
+  margin-top: 15px;
+  width: 40px;
+  height: 3px;
+  background: #B23544; }
+
+.page--about-journey {
+  width: 100%;
+  height: 60vh;
+  min-height: 450px;
+  position: relative;
+  background: #A7C5D1; }
+
+.journey--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .journey--container .page--title {
+    position: absolute;
+    margin-top: -80px;
+    font-family: "Mansfield", cursive;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 4.7em;
+    color: #ffffff;
+    text-shadow: none;
+    font-weight: 500; }
+
+.about-journey-center-box {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  width: 86%;
+  height: 50%;
+  margin-top: 12%; }
+
+.journey-item {
+  background: #333333;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  transition: all 0.3s ease; }
+
+.journey-img {
+  width: auto;
+  height: 100%;
+  z-index: 0;
+  opacity: .7; }
+
+.journey-item-city {
+  position: absolute;
+  top: 40%;
+  font-family: "Mansfield", cursive;
+  color: #c8dbe3;
+  margin: 0 30px;
+  text-transform: lowercase;
+  font-size: 3.3em;
+  letter-spacing: 0; }
+
+.journey-item-country {
+  position: absolute;
+  top: 40%;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  margin-top: 55px;
+  background: #A7C5D1; }
+
+/* videos */
+.overlay-absolute {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background: rgba(51, 51, 51, 0.75); }
+
+.videos-header {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .videos-header a {
+    z-index: 2; }
+  .videos-header .contact--desc h2 {
+    color: #A7C5D1; }
+  .videos-header .contact--desc .caps {
+    color: #ffffff; }
+    .videos-header .contact--desc .caps a {
+      color: #A7C5D1; }
+      .videos-header .contact--desc .caps a:hover {
+        color: #333333; }
+
+.videos-container {
+  width: 100%;
+  background: #A7C5D1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.vimeography-theme-harvestone {
+  max-width: 1000px; }
+
+/* services page */
+.page--services-container {
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .page--services-container .smcap {
+    color: #333333;
+    margin: 0 0 15px 0; }
+  .page--services-container h2 {
+    color: #ffffff;
+    margin: 0; }
+  .page--services-container h3 {
+    font-size: 1.7em; }
+
+.services--line {
+  width: 80px;
+  height: 5px;
+  background: #ffffff;
+  margin: 30px 0;
+  z-index: 2; }
+
+.caps p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+  font-size: .9em;
+  color: #ffffff; }
+
+.caps a {
+  color: #333333;
+  font-weight: 600;
+  transition: all 0.3s ease; }
+  .caps a:hover {
+    background: #ffffff;
+    transition: all 0.3s ease; }
+
+/* contact page */
+.page--contact {
+  background-color: #A7C5D1;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.contact--desc {
+  width: 70%;
+  text-align: center;
+  z-index: 2; }
+  .contact--desc h2 {
+    font-size: 3em;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+  .contact--desc .caps {
+    color: #333333;
+    letter-spacing: 1.5px;
+    margin-bottom: 0; }
+
+.caps-white {
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  margin-top: 30px; }
+
+.cursive-contact {
+  font-family: "Mansfield", cursive;
+  text-align: center;
+  font-size: 5em;
+  margin: -70px 0 0 0;
+  color: #ffffff; }
+
+.less-height {
+  height: 70vh; }
+  .less-height .overlay {
+    height: 70vh; }
+
+.contact-form {
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  background: #ffffff; }
 
 /* homepage & navigation styles */
 body {
@@ -164,7 +454,6 @@ button {
       font-weight: 100;
       font-family: "Playfair Display", serif;
       padding: 15px 0;
-      text-transform: lowercase; 
       transition: all 0.3s ease; }
       .nav--open-menu ul li:hover {
         background: #A7C5D1;
@@ -320,10 +609,10 @@ button {
 .about--title-line {
   position: absolute;
   background: #A7C5D1;
-  width: 350px;
+  width: 380px;
   height: 8px;
   top: 120px;
-  left: 80px; }
+  left: 10px; }
 
 .about--desc {
   margin-top: 10%;
@@ -331,13 +620,13 @@ button {
   margin-right: 10%;
   background: #ffffff;
   padding: 0px 3px 0px 10px; }
-
-.about--desc p {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0.03em;
-  font-size: 1.8em;
-  line-height: 1.7em;
-  font-style: italic; }
+  .about--desc p {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.03em;
+    font-size: 1.8em;
+    line-height: 1.7em;
+    font-style: italic;
+    margin: 0; }
 
 .about--btn {
   margin-top: 12%;
@@ -477,7 +766,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
-  height: 100%;
+  height: 70%;
   margin: 0 8%; }
 
 .services--item {
@@ -509,6 +798,16 @@ button {
   width: 100%;
   object-fit: cover;
   transition: all 0.3s ease; }
+
+.services--button {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  display: flex;
+  justify-content: center; }
+  .services--button button:hover {
+    background: #333333;
+    color: #ffffff; }
 
 .img-overlay {
   position: absolute;
@@ -612,7 +911,9 @@ footer {
     grid-gap: 10px; }
   .contact--title {
     width: 100%;
-    left: 0; } }
+    left: 0; }
+  .page--header {
+    height: 120vh; } }
 
 @media only screen and (max-width: 800px) {
   .films--grid {
@@ -625,7 +926,29 @@ footer {
     grid-template-columns: 1fr 1fr 1fr; }
   .contact--box {
     width: 65%;
-    left: 17.5%; } }
+    left: 17.5%; }
+  .page--header-right {
+    width: 60%; }
+  .page--header-left {
+    width: 40%;
+    background-image: url("img/about-page-narrow.jpg"); }
+  .page--about-journey {
+    height: 85vh;
+    min-height: 700px; }
+  .journey--container .page--title {
+    margin-top: -200px;
+    font-size: 4em; }
+  .about-journey-center-box {
+    margin-top: 18%;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); } }
+
+@media only screen and (max-width: 725px) {
+  .about--title-line {
+    width: 280px;
+    top: 170px; }
+  .journey--container .page--title {
+    margin-top: -200px;
+    font-size: 3.5em; } }
 
 @media only screen and (max-width: 600px) {
   .number--box {
@@ -651,6 +974,10 @@ footer {
     text-align: center; }
     .about--title h2 {
       margin-left: 0; }
+  .about--title-line {
+    left: 20%;
+    width: 60%;
+    top: 115px; }
   .about--desc {
     margin: 0 10%; }
   .about--btn {
@@ -667,7 +994,7 @@ footer {
   .services--grid {
     grid-template-columns: 1fr;
     grid-gap: 0;
-    height: 100vh; }
+    height: 90vh; }
   .services--item {
     margin: 0;
     text-align: center; }
@@ -680,10 +1007,45 @@ footer {
     left: 0; }
   .contact--title h2 {
     font-size: 5.5em; }
+  .contact--box p {
+    padding: 45px; }
+  .page--header {
+    height: 100vh; }
+  .page--header-left {
+    width: 100%;
+    background-image: url("img/about-page.jpg");
+    background-size: cover; }
+  .page--header-right {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); }
+  .page-about--description {
+    left: 90px; }
+  .journey--container .page--title {
+    margin-top: -210px;
+    font-size: 3em; }
   .footer--bottom {
     padding: 10px; } }
 
+@media only screen and (max-width: 570px) {
+  .page--header {
+    min-height: 1200px; }
+  .page--about-journey {
+    height: 140vh; }
+  .about-journey-center-box {
+    margin-top: 18%;
+    grid-gap: 0;
+    grid-template-columns: 1fr; }
+  .journey--container .page--title {
+    margin-top: -470px;
+    font-size: 3em;
+    text-align: center; }
+  .journey-img {
+    height: auto;
+    width: 100%; } }
+
 @media only screen and (max-width: 450px) {
+  .hero--container {
+    height: 130vh; }
   .films--container {
     height: 140vh;
     padding-bottom: 15em; }
@@ -694,5 +1056,13 @@ footer {
     margin-left: 5%; }
   .contact--title h2 {
     font-size: 4.5em; }
-  .contact--text {
-    padding: 45px; } }
+  .page--header {
+    min-height: 1300px; }
+  .page-about--description {
+    text-align: left; }
+  .page--about-journey {
+    height: 150vh; }
+  .journey-item {
+    height: 230px; }
+  .page--services-container {
+    top: 15%; } }
