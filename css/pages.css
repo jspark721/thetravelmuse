@@ -266,25 +266,31 @@
     letter-spacing: 5px;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase; }
-  .contact--desc .caps {
-    color: #333333;
+  .contact--desc p {
+    text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 0; }
-
-.caps-white {
-  font-size: 1.1em;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  margin-top: 30px; }
+    margin-bottom: 40px;
+    font-size: .9em;
+    color: #333333;
+    text-transform: uppercase; }
+  .contact--desc h4 {
+    font-size: 1.1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    margin-top: 30px; }
 
 .cursive-contact {
-  font-family: "Mansfield", cursive;
-  text-align: center;
-  font-size: 5em;
-  margin: -70px 0 0 0;
-  color: #ffffff; }
+  position: absolute;
+  width: 100%; }
+  .cursive-contact h3 {
+    text-align: center;
+    font-family: "Mansfield", cursive;
+    text-align: center;
+    font-size: 5em;
+    color: #ffffff;
+    margin: -72px 0 0 0; }
 
 .less-height {
   height: 70vh; }
