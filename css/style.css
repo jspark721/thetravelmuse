@@ -440,16 +440,22 @@ button {
   flex-direction: column;
   text-align: center;
   margin-top: 30px; }
-  .nav--open-menu a {
-    font-size: 2em;
-    font-weight: 100;
-    font-family: "Playfair Display", serif;
-    padding: 15px 0;
-    transition: all 0.3s ease; }
-    .nav--open-menu a:hover {
-      background: #A7C5D1;
-      color: #ffffff;
+  .nav--open-menu ul {
+    list-style-type: none;
+    padding-inline-start: 0; }
+    .nav--open-menu ul li {
+      font-size: 2em;
+      font-weight: 100;
+      font-family: "Playfair Display", serif;
+      padding: 15px 0;
       transition: all 0.3s ease; }
+      .nav--open-menu ul li:hover {
+        background: #A7C5D1;
+        color: #ffffff;
+        transition: all 0.3s ease; }
+        .nav--open-menu ul li:hover a {
+          color: #ffffff;
+          text-transform: lowercase; }
 
 .close {
   transform: translateX(-300px);

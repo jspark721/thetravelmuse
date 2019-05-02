@@ -26,12 +26,13 @@
     <div class="nav--open close sticky">
       <div class="nav--open-icon"><i class="fas fa-times"></i></div>
       <div class="nav--open-title">explore</div>
+      <div class="nav--open-menu">
         <?php
           wp_nav_menu( $arg = array (
-            'menu_class' => 'nav--open-menu',
             'theme_location' => 'primary'
           ));
          ?>
+       </div>
     </div>
 
     <div class="header--social">
