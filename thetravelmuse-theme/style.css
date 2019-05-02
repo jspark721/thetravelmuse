@@ -368,6 +368,8 @@ button {
     color: #333333;
     transition: all 0.3s ease;
     transform: scale(1.03); }
+  button a {
+    color: #ffffff; }
 
 .btn-blue {
   background: #A7C5D1;

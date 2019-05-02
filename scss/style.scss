@@ -86,6 +86,9 @@ button {
     transition: $ease;
     transform: scale(1.03);
   }
+  a {
+    color: $white;
+  }
 }
 .btn-blue{
   background: $main;
