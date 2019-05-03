@@ -34,7 +34,7 @@
           echo $content;
         ?>
       </div>
-      <button class="about--btn">learn more <i class="fas fa-angle-double-right"></i></button>
+      <button class="about--btn"><a href="/about" alt="About Page">learn more <i class="fas fa-angle-double-right"></i></a></button>
     </div>
   </div>
 </section>
@@ -62,7 +62,7 @@
       <iframe src="https://player.vimeo.com/video/328875516?title=0&byline=0&portrait=0" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
-  <div class="films--btn"><button class="btn-inverse">more videos <i class="fas fa-angle-double-right"></i></button></div>
+  <div class="films--btn"><button class="btn-inverse"><a href="/videos" alt="Videos Page">more videos</a><i class="fas fa-angle-double-right"></i></button></div>
 
 </section>
 <section class="work--container">
@@ -109,7 +109,8 @@
       </div>
     </a>
   </div>
-  <div class="services--button"><button class="btn-inverse">view services</button></div>
+  <br>
+  <div class="services--button"><button class="btn-inverse"><a href="/services" alt="Services Page">view services</a></button></div>
 </section>
 
 
@@ -124,7 +125,7 @@
       echo $content;
     ?>
     <div class="contact--line"></div>
-    <button class="btn-inverse">get in touch</button>
+    <button class="btn-inverse"><a href="/contact" alt="Contact Page">get in touch</a></button>
   </div>
   <div class="overlay bigger"></div>
 </section>

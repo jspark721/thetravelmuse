@@ -36,10 +36,10 @@
     </div>
 
     <div class="header--social">
-      <a href="https://www.youtube.com/user/NathalieTravelMuse"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.youtube.com/user/NathalieTravelMuse" alt="Youtube"><i class="fab fa-youtube"></i></a>
       <a href="https://www.instagram.com/thetravelmuse/" alt="Instagram"><i class="fab fa-instagram" style="font-size: 1.3em"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-      <a href=""><i class="fab fa-facebook"></i></a>
-      <a href=""><i class="far fa-envelope"></i></a>
+      <a href="https://www.twitter.com/TheTravelMuse" alt="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/NathalieTheTravelMuse" alt="Twitter"><i class="fab fa-facebook"></i></a>
+      <a href="mailto:nathaliebasha@yahoo.com" alt="Email Nathalie"><i class="far fa-envelope"></i></a>
     </div>
   </header>

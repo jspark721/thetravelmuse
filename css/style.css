@@ -396,6 +396,8 @@ button {
   color: #333333; }
   .btn-inverse:hover {
     background: #A7C5D1; }
+  .btn-inverse button a {
+    color: #333333 !important; }
 
 .hover-white {
   transition: all 0.3s ease; }

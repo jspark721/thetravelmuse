@@ -206,8 +206,8 @@
 
 /* services page */
 .page--services-container {
-  left: 12.5%;
-  width: 75%;
+  left: 20%;
+  width: 60%;
   height: 100%;
   position: absolute;
   display: flex;
@@ -277,7 +277,6 @@
     letter-spacing: 1.5px;
     margin-bottom: 40px;
     font-size: .9em;
-    color: #333333;
     text-transform: uppercase; }
   .contact--desc h4 {
     font-size: 1.1em;
@@ -403,6 +402,8 @@ button {
   color: #333333; }
   .btn-inverse:hover {
     background: #A7C5D1; }
+  .btn-inverse a {
+    color: #333333; }
 
 .hover-white {
   transition: all 0.3s ease; }
@@ -510,7 +511,7 @@ button {
     .header--social i:hover {
       transform: scale(1.3);
       transition: all 0.3s ease;
-      color: #A7C5D1; }
+      color: #76A6C1; }
 
 .hero--container {
   height: 105vh;
@@ -831,8 +832,9 @@ button {
   display: flex;
   justify-content: center; }
   .services--button button:hover {
-    background: #333333;
-    color: #ffffff; }
+    background: #333333;}
+  .services--button button:hover a {
+    color: #ffffff !important; }
 
 .img-overlay {
   position: absolute;
@@ -853,7 +855,6 @@ button {
   .contact--container .overlay {
     height: 90vh;
     margin-top: 0;
-    position: absolute;
     background: rgba(51, 51, 51, 0.2); }
 
 .contact--box {
@@ -997,7 +998,10 @@ footer {
     top: 170px; }
   .journey--container .page--title {
     margin-top: -200px;
-    font-size: 3.5em; } }
+    font-size: 3.5em; }
+  .page--services-container {
+    left: 10%;
+    width: 80%; } }
 
 @media only screen and (max-width: 600px) {
   .number--box {
