@@ -957,6 +957,7 @@ $xsmall: 450px;
 @media only screen and (max-width: $xsmall) {
   .hero--container {
     height: 130vh;
+    background-attachment: scroll;
   }
   .films--container {
     height: 140vh;
@@ -991,5 +992,8 @@ $xsmall: 450px;
   }
   .vimeography-theme-harvestone {
     width: 97%;
+  }
+  .about--left, .page--header-left, .videos-header, .contact--container, .work--container {
+    background-attachment: scroll;
   }
 }

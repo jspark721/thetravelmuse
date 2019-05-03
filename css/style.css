@@ -396,8 +396,6 @@ button {
   color: #333333; }
   .btn-inverse:hover {
     background: #A7C5D1; }
-  .btn-inverse button a {
-    color: #333333 !important; }
 
 .hover-white {
   transition: all 0.3s ease; }
@@ -1086,7 +1084,8 @@ footer {
 
 @media only screen and (max-width: 450px) {
   .hero--container {
-    height: 130vh; }
+    height: 130vh;
+    background-attachment: scroll; }
   .films--container {
     height: 140vh;
     padding-bottom: 15em; }
@@ -1108,4 +1107,6 @@ footer {
   .page--services-container {
     top: 15%; }
   .vimeography-theme-harvestone {
-    width: 97%; } }
+    width: 97%; }
+  .about--left, .page--header-left, .videos-header, .contact--container, .work--container {
+    background-attachment: scroll; } }

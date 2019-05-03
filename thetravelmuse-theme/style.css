@@ -1,14 +1,8 @@
 @font-face {
-  font-family: 'Mansfield';
-  src: url("/css/webfont/Mansfield.eot?#iefix") format("embedded-opentype"), url("/css/webfont/Mansfield.otf") format("opentype"), url("/css/webfont/Mansfield.woff") format("woff"), url("/css/webfont/Mansfield.ttf") format("truetype"), url("/css/webfont/Mansfield.svg#Mansfield") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Mansfield';
-  src: url("/css/webfont/Mansfield.eot?#iefix") format("embedded-opentype"), url("/css/webfont/Mansfield.otf") format("opentype"), url("/css/webfont/Mansfield.woff") format("woff"), url("/css/webfont/Mansfield.ttf") format("truetype"), url("/css/webfont/Mansfield.svg#Mansfield") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+   font-family: 'Mansfield';
+   src: url('fonts/Mansfield.ttf');
+   font-weight: normal;
+ }
 
 .travelmuse-logo {
   font-family: "Oswald", sans-serif;
@@ -1102,7 +1096,8 @@ footer {
 
 @media only screen and (max-width: 450px) {
   .hero--container {
-    height: 130vh; }
+    height: 130vh;
+    background-attachment: scroll; }
   .films--container {
     height: 140vh;
     padding-bottom: 15em; }
@@ -1124,4 +1119,6 @@ footer {
   .page--services-container {
     top: 15%; }
   .vimeography-theme-harvestone {
-    width: 97%; } }
+    width: 97%; }
+  .about--left, .page--header-left, .videos-header, .contact--container, .work--container {
+    background-attachment: scroll; } }
