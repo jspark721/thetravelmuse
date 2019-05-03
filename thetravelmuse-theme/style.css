@@ -1,8 +1,17 @@
+/*
+Theme Name: The Travel Muse
+Author: Julie Loves Design Co
+Description: Custom Theme created for The Travel Muse by Julie Loves Co
+Text Domain: nathaliebasha.com
+*/
+
 @font-face {
-   font-family: 'Mansfield';
-   src: url('fonts/Mansfield.ttf');
-   font-weight: normal;
- }
+  font-family: 'Mansfield';
+  src: url('Mansfield.eot?#iefix') format('embedded-opentype'),  url('Mansfield.otf')  format('opentype'),
+	     url('Mansfield.woff') format('woff'), url('Mansfield.ttf')  format('truetype'), url('Mansfield.svg#Mansfield') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .travelmuse-logo {
   font-family: "Oswald", sans-serif;
