@@ -63,21 +63,6 @@
     </div>
   </div>
   <div class="films--btn"><button class="btn-inverse"><a href="/videos" alt="Videos Page">more videos</a><i class="fas fa-angle-double-right"></i></button></div>
-
-</section>
-<section class="work--container">
-  <div class="work--title">
-    <p class="smcap">work</p>
-    <h2>the travel muse</h2>
-    <div class="work--summary">
-      <?php
-        $my_postid = 11;
-        $content = get_post($my_postid)->post_content;
-        echo $content;
-      ?>
-    </div>
-  </div>
-  <div class="overlay"></div>
 </section>
 
 <section class="services--container">
@@ -111,23 +96,6 @@
   </div>
   <br>
   <div class="services--button"><button class="btn-inverse"><a href="/services" alt="Services Page">view services</a></button></div>
-</section>
-
-
-<section class="contact--container">
-  <div class="contact--title">
-    <h2 class="cursive">work together</h2>
-  </div>
-  <div class="contact--box">
-    <?php
-      $my_postid = 15;
-      $content = get_post($my_postid)->post_content;
-      echo $content;
-    ?>
-    <div class="contact--line"></div>
-    <button class="btn-inverse"><a href="/contact" alt="Contact Page">get in touch</a></button>
-  </div>
-  <div class="overlay bigger"></div>
 </section>
 
 <?php get_footer(); ?>

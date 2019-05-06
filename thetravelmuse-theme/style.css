@@ -666,8 +666,8 @@ button {
 
 .films--container {
   position: relative;
-  z-index: 4;
   background: #4d4d4d;
+  max-height: 905px;
   height: 120vh; }
   .films--container .number--box {
     position: relative;
@@ -722,37 +722,6 @@ button {
   margin-left: 20px;
   position: absolute; }
 
-.work--container {
-  position: relative;
-  height: 70vh;
-  width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center; }
-
-.work--title {
-  position: absolute;
-  width: 60%;
-  margin-left: 20%;
-  text-align: center; }
-  .work--title h2 {
-    color: #ffffff;
-    margin: 0;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 3.5em; }
-
-.work--summary {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.5px;
-  line-height: 1.5em;
-  font-size: 0.85em; }
-
 .overlay {
   height: 100%;
   width: 100%;
@@ -775,7 +744,7 @@ button {
   .services--container .number--box {
     border-color: #ffffff;
     position: absolute;
-    left: 47%;
+    right: 90px;
     top: -50px; }
     .services--container .number--box .number--box-line {
       position: absolute;
@@ -859,43 +828,6 @@ button {
     height: 90vh;
     margin-top: 0;
     background: rgba(51, 51, 51, 0.2); }
-
-.contact--box {
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  height: 250px;
-  background: rgba(77, 77, 77, 0.9);
-  text-align: center; }
-  .contact--box button {
-    margin-top: 20px; }
-  .contact--box p {
-    padding: 70px;
-    font-family: "Open Sans", sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .7em; }
-
-.contact--title {
-  position: absolute;
-  width: 60%;
-  left: 20%;
-  margin-top: -150px;
-  z-index: 4; }
-  .contact--title h2 {
-    text-align: center;
-    font-size: 7.5em;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.8); }
-
-.contact--line {
-  position: absolute;
-  bottom: 70px;
-  width: 10%;
-  left: 45%;
-  height: 5px;
-  background: #A7C5D1; }
 
 footer {
   height: 20vh;
@@ -1044,7 +976,8 @@ footer {
     .films--title h2 {
       font-size: 5em; }
   .films--container {
-    height: 150vh; }
+    height: 150vh;
+    max-height: 1400px; }
   .films--grid {
     grid-template-columns: 1fr; }
   .work--title h2 {
@@ -1129,5 +1062,5 @@ footer {
     top: 15%; }
   .vimeography-theme-harvestone {
     width: 97%; }
-  .about--left, .page--header-left, .videos-header, .contact--container, .work--container {
+  .about--left, .page--header-left, .videos-header, .contact--container {
     background-attachment: scroll; } }
