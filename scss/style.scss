@@ -403,9 +403,9 @@ button {
 
 .films--container {
   position: relative;
-  z-index: 4;
   background: lighten($dark, 10%);
   height: 120vh;
+  max-height: 905px;
   .number--box {
     position: relative;
     top: -1px;
@@ -468,40 +468,6 @@ button {
   position: absolute;
 }
 
-.work--container {
-  position: relative;
-  height: 70vh;
-  width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-}
-
-.work--title {
-  position: absolute;
-  width: 60%;
-  margin-left: 20%;
-  text-align: center;
-  h2 {
-    color: $white;
-    margin: 0;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 3.5em;
-  }
-}
-
-.work--summary {
-  color: $white;
-  font-family: $body;
-  font-weight: 100;
-  letter-spacing: 0.5px;
-  line-height: 1.5em;
-  font-size: 0.85em;
-}
 .overlay {
   height: 100%;
   width: 100%;
@@ -525,7 +491,7 @@ button {
   .number--box {
     border-color: $white;
     position: absolute;
-    left: 47%;
+    right: 90px;
     top: -50px;
     .number--box-line {
       position: absolute;
@@ -619,25 +585,7 @@ button {
   background-size: cover;
   background-attachment: fixed;
 }
-.contact--box {
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  height: 250px;
-  background: rgba(lighten($dark, 10%), .9);
-  text-align: center;
-  button {
-    margin-top: 20px;
-  }
-  p {
-    padding: 70px;
-    font-family: $body;
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .7em;
-  }
-}
+
 .contact--title {
   position: absolute;
   width: 60%;
@@ -860,6 +808,7 @@ $xsmall: 450px;
   }
   .films--container {
     height: 150vh;
+    max-height: 1400px;
   }
   .films--grid {
     grid-template-columns: 1fr;
@@ -993,7 +942,7 @@ $xsmall: 450px;
   .vimeography-theme-harvestone {
     width: 97%;
   }
-  .about--left, .page--header-left, .videos-header, .contact--container, .work--container {
+  .about--left, .page--header-left, .videos-header, .contact--container {
     background-attachment: scroll;
   }
 }
